@@ -1,163 +1,180 @@
-﻿iso_destination_country,name_destination_country,mlsum
-AD,Andorra,161683
-AE,United Arab Emirates,22361840
-AF,Afghanistan,670143
-AL,Albania,274110
-AM,Armenia,43988
-AR,Argentina,3974549
-AU,Australia,20217241
-AW,Aruba,24914
-AZ,Azerbaijan,632454
-BA,Bosnia & Herzegovina,4240824
-BB,Barbados,99481
-BD,Bangladesh,461041
-BE,Belgium,2378091
-BG,Bulgaria,4431428
-BH,Bahrain,885203
-BJ,Benin,879648
-BM,Bermuda,3531
-BN,Brunei Darussalam,1329993
-BO,Bolivia,358892
-BR,Brazil,6660161
-BT,Bhutan,83508
-BW,Botswana,1200
-BY,Belarus,139051
-BZ,Belize,105088
-CA,Canada,45258789
-CD,Democratic Republic of Congo,15052
-CG,Congo,6987
-CH,Switzerland,57677174
-CI,Ivory Coast,104640
-CL,Chile,2719295
-CM,Cameroon,12533
-CO,Colombia,3125
-CR,Costa Rica,331546
-CW,Cura√ßao,274588
-CY,Cyprus,5083
-CZ,Czech Republic,18852578
-DE,Germany,16565485
-DK,Denmark,6756045
-DM,Dominica,32872
-DO,Dominican Republic,66933
-DZ,Algeria,5921160
-EC,Ecuador,687500
-EE,Estonia,1938
-EG,Egypt,735255
-ES,Spain,4345098
-FI,Finland,2013390
-FK,Falklands,14112
-FR,France,9707118
-GA,Gabon,82306
-GB,United Kingdom,253866151
-GD,Grenada,9852
-GE,Georgia,379916
-GH,Ghana,18648
-GI,Gibraltar,149
-GL,Greenland,111752
-GR,Greece,353118
-GT,Guatemala,463133
-GY,Guyana,89193
-HK,Hong Kong,205924
-HN,Honduras,24399
-HR,Croatia,5983218
-HT,Haiti,158208
-HU,Hungary,2149200
-ID,Indonesia,18559869
-IE,Ireland,11116103
-IL,Israel,283782
-IN,India,4967853
-IQ,Iraq,21617366
-IR,Iran,2924710
-IS,Iceland,124347
-IT,Italy,37811979
-JM,Jamaica,554653
-JO,Jordan,3691529
-JP,Japan,6058976
-KE,Kenya,980013
-KG,Kyrgyzstan,494265
-KH,Cambodia,3258
-KR,South Korea,2399409
-KW,Kuwait,14837108
-KZ,Kazakhstan,3319451
-LA,Lao,685
-LB,Lebanon,933699
-LC,Saint Lucia,108034
-LI,Liechtenstein,468450
-LK,Sri Lanka,14907
-LR,Liberia,9130
-LT,Lithuania,6622146
-LU,Luxembourg,4254813
-LV,Latvia,6561690
-LY,Libya,188476
-MA,Morocco,215143
-MC,Monaco,3871
-MD,Moldova,699579
-ME,Montenegro,994250
-MG,Madagascar,890
-MK,Macedonia,1741480
-ML,Mali,2868
-MN,Mongolia,72869
-MO,Macao,566707
-MR,Mauritania,1094
-MT,Malta,125735
-MU,Mauritius,807915
-MV,Maldives,2681
-MW,Malawi,461
-MX,Mexico,11938541
-MY,Malaysia,4638513
-"NA",Namibia,738120
-NC,New Caledonia,619289
-NI,Nicaragua,382284
-NL,Netherlands,17917864
-NO,Norway,9696685
-NP,Nepal,1578414
-NZ,New Zealand,8458087
-OM,Oman,56199201
-PA,Panama,3251388
-PE,Peru,3886404
-PG,Papua New Guinea,16044
-PH,Philippines,1359400
-PK,Pakistan,700051
-PL,Poland,7716734
-PT,Portugal,542414
-PW,Palau,5944
-PY,Paraguay,1414553
-QA,Qatar,1687515
-RO,Romania,2351181
-RS,Serbia,1944370
-RU,Russia,44683770
-SA,Saudi Arabia,47941868
-SE,Sweden,14326251
-SG,Singapore,6187628
-SI,Slovenia,1491260
-SK,Slovakia,1727706
-SM,San Marino,2153
-SN,Senegal,101720
-SR,Suriname,221558
-SV,El Salvador,92909
-TG,Togo,8200
-TH,Thailand,19372179
-TJ,Tajikistan,296553
-TL,East Timor,4422
-TM,Turkmenistan,1900
-TN,Tunisia,7991212
-TO,Tonga,3985
-TR,Turkey,11844219
-TT,Trinidad & Tobago,1500747
-TW,Taiwan,545603
-TZ,Tanzania,1380691
-UA,Ukraine,9737127
-UG,Uganda,36377
-US,United States,1913951562
-UY,Uruguay,13936630
-UZ,Uzbekistan,43434
-VA,Vatican,13656
-VC,Saint Vincent & The Grenadines,50890
-VE,Venezuela,177849
-VN,Vietnam,43552
-YE,Yemen,231092
-ZA,South Africa,14375803
-ZM,Zambia,564583
-NA,Federal Republic of Yugoslavia,888990
-NA,Kosovo,548441
-NA,Netherlands Antilles,19500
+﻿iso_destination_country,name_destination_country,wkdok,lat_source_country,long_source_country,lat_destination_country,long_destination_country,mlsum
+AD,Andorra,Waffen & Munition,47.333333,13.333333,42.5,1.5,161683
+AE,United Arab Emirates,Waffen & Munition,47.333333,13.333333,24,54,22361840
+AF,Afghanistan,Waffen & Munition,47.333333,13.333333,33,66,670143
+AL,Albania,Waffen & Munition,47.333333,13.333333,41,20,274110
+AM,Armenia,Waffen & Munition,47.333333,13.333333,40,45,43988
+AR,Argentina,Waffen & Munition,47.333333,13.333333,-34,-64,3974549
+AU,Australia,Waffen & Munition,47.333333,13.333333,-25,135,20217241
+AW,Aruba,Waffen & Munition,47.333333,13.333333,12.5,-69.966667,24914
+AZ,Azerbaijan,Waffen & Munition,47.333333,13.333333,40.5,47.5,632454
+BA,Bosnia & Herzegovina,Waffen & Munition,47.333333,13.333333,44.25,17.833333,4240824
+BB,Barbados,Waffen & Munition,47.333333,13.333333,13.166667,-59.533333,99481
+BD,Bangladesh,Waffen & Munition,47.333333,13.333333,24,90,461041
+BE,Belgium,Waffen & Munition,47.333333,13.333333,50.833333,4,2378091
+BG,Bulgaria,Waffen & Munition,47.333333,13.333333,43,25,4431428
+BH,Bahrain,Waffen & Munition,47.333333,13.333333,26,50.5,885203
+BJ,Benin,Waffen & Munition,47.333333,13.333333,9.5,2.25,879648
+BM,Bermuda,Waffen & Munition,47.333333,13.333333,32.333333,-64.75,3531
+BN,Brunei Darussalam,Waffen & Munition,47.333333,13.333333,4.5,114.666667,1329993
+BO,Bolivia,Waffen & Munition,47.333333,13.333333,-17,-65,358892
+BR,Brazil,Waffen & Munition,47.333333,13.333333,-10,-55,6660161
+BT,Bhutan,Waffen & Munition,47.333333,13.333333,27.5,90.5,83508
+BW,Botswana,Waffen & Munition,47.333333,13.333333,-22,24,1200
+BY,Belarus,Waffen & Munition,47.333333,13.333333,53,28,139051
+BZ,Belize,Waffen & Munition,47.333333,13.333333,17.25,-88.75,105088
+CA,Canada,Waffen & Munition,47.333333,13.333333,60,-96,45258789
+CD,Democratic Republic of Congo,Waffen & Munition,47.333333,13.333333,0,25,15052
+CG,Congo,Waffen & Munition,47.333333,13.333333,-1,15,6987
+CH,Switzerland,Waffen & Munition,47.333333,13.333333,47,8,57677174
+CI,Ivory Coast,Waffen & Munition,47.333333,13.333333,8,-5,104640
+CL,Chile,Waffen & Munition,47.333333,13.333333,-30,-71,2719295
+CM,Cameroon,Waffen & Munition,47.333333,13.333333,6,12,12533
+CO,Colombia,Waffen & Munition,47.333333,13.333333,4,-72,3125
+CR,Costa Rica,Waffen & Munition,47.333333,13.333333,10,-84,331546
+CW,Cura√ßao,Waffen & Munition,47.333333,13.333333,12.166667,-69,274588
+CY,Cyprus,Waffen & Munition,47.333333,13.333333,35,33,5083
+CZ,Czech Republic,Waffen & Munition,47.333333,13.333333,49.75,15,18852578
+DE,Germany,Waffen & Munition,47.333333,13.333333,51.5,10.5,16565485
+DK,Denmark,Waffen & Munition,47.333333,13.333333,56,10,6756045
+DM,Dominica,Waffen & Munition,47.333333,13.333333,15.5,-61.333333,32872
+DO,Dominican Republic,Waffen & Munition,47.333333,13.333333,19,-70.666667,66933
+DZ,Algeria,Waffen & Munition,47.333333,13.333333,28,3,5921160
+EC,Ecuador,Waffen & Munition,47.333333,13.333333,-2,-77.5,687500
+EE,Estonia,Waffen & Munition,47.333333,13.333333,59,26,1938
+EG,Egypt,Waffen & Munition,47.333333,13.333333,27,30,735255
+ES,Spain,Waffen & Munition,47.333333,13.333333,40,-4,4345098
+FI,Finland,Waffen & Munition,47.333333,13.333333,64,26,2013390
+FK,Falklands,Waffen & Munition,47.333333,13.333333,-51.75,-59.166667,14112
+FR,France,Waffen & Munition,47.333333,13.333333,46,2,9707118
+GA,Gabon,Waffen & Munition,47.333333,13.333333,-1,11.75,82306
+GB,United Kingdom,Waffen & Munition,47.333333,13.333333,54,-4,253866151
+GD,Grenada,Waffen & Munition,47.333333,13.333333,12.116667,-61.666667,9852
+GE,Georgia,Waffen & Munition,47.333333,13.333333,41.999981,43.499905,379916
+GH,Ghana,Waffen & Munition,47.333333,13.333333,8,-2,18648
+GI,Gibraltar,Waffen & Munition,47.333333,13.333333,36.133333,-5.35,149
+GL,Greenland,Waffen & Munition,47.333333,13.333333,72,-40,111752
+GR,Greece,Waffen & Munition,47.333333,13.333333,39,22,353118
+GT,Guatemala,Waffen & Munition,47.333333,13.333333,15.5,-90.25,463133
+GY,Guyana,Waffen & Munition,47.333333,13.333333,5,-59,89193
+HK,Hong Kong,Waffen & Munition,47.333333,13.333333,22.25,114.166667,205924
+HN,Honduras,Waffen & Munition,47.333333,13.333333,15,-86.5,24399
+HR,Croatia,Waffen & Munition,47.333333,13.333333,45.166667,15.5,5983218
+HT,Haiti,Waffen & Munition,47.333333,13.333333,19,-72.416667,158208
+HU,Hungary,Waffen & Munition,47.333333,13.333333,47,20,2149200
+ID,Indonesia,Waffen & Munition,47.333333,13.333333,-5,120,18559869
+IE,Ireland,Waffen & Munition,47.333333,13.333333,53,-8,11116103
+IL,Israel,Waffen & Munition,47.333333,13.333333,31.5,34.75,283782
+IN,India,Waffen & Munition,47.333333,13.333333,20,77,4967853
+IQ,Iraq,Waffen & Munition,47.333333,13.333333,33,44,21617366
+IR,Iran,Waffen & Munition,47.333333,13.333333,32,53,2924710
+IS,Iceland,Waffen & Munition,47.333333,13.333333,65,-18,124347
+IT,Italy,Waffen & Munition,47.333333,13.333333,42.833333,12.833333,37811979
+JM,Jamaica,Waffen & Munition,47.333333,13.333333,18.25,-77.5,554653
+JO,Jordan,Waffen & Munition,47.333333,13.333333,31,36,3691529
+JP,Japan,Waffen & Munition,47.333333,13.333333,36,138,6058976
+KE,Kenya,Waffen & Munition,47.333333,13.333333,1,38,980013
+KG,Kyrgyzstan,Waffen & Munition,47.333333,13.333333,41,75,494265
+KH,Cambodia,Waffen & Munition,47.333333,13.333333,13,105,3258
+KR,South Korea,Waffen & Munition,47.333333,13.333333,37,127.5,2399409
+KW,Kuwait,Waffen & Munition,47.333333,13.333333,29.5,47.75,14837108
+KZ,Kazakhstan,Waffen & Munition,47.333333,13.333333,48,68,3319451
+LA,Lao,Waffen & Munition,47.333333,13.333333,18,105,685
+LB,Lebanon,Waffen & Munition,47.333333,13.333333,33.833333,35.833333,933699
+LC,Saint Lucia,Waffen & Munition,47.333333,13.333333,13.883333,-60.966667,108034
+LI,Liechtenstein,Waffen & Munition,47.333333,13.333333,47.166667,9.533333,468450
+LK,Sri Lanka,Waffen & Munition,47.333333,13.333333,7,81,14907
+LR,Liberia,Waffen & Munition,47.333333,13.333333,6.5,-9.5,9130
+LT,Lithuania,Waffen & Munition,47.333333,13.333333,56,24,6622146
+LU,Luxembourg,Waffen & Munition,47.333333,13.333333,49.75,6.166667,4254813
+LV,Latvia,Waffen & Munition,47.333333,13.333333,57,25,6561690
+LY,Libya,Waffen & Munition,47.333333,13.333333,25,17,188476
+MA,Morocco,Waffen & Munition,47.333333,13.333333,32,-5,215143
+MC,Monaco,Waffen & Munition,47.333333,13.333333,43.733333,7.4,3871
+MD,Moldova,Waffen & Munition,47.333333,13.333333,47,29,699579
+ME,Montenegro,Waffen & Munition,47.333333,13.333333,42.5,19.3,994250
+MG,Madagascar,Waffen & Munition,47.333333,13.333333,-20,47,890
+MK,Macedonia,Waffen & Munition,47.333333,13.333333,41.833333,22,1741480
+ML,Mali,Waffen & Munition,47.333333,13.333333,17,-4,2868
+MN,Mongolia,Waffen & Munition,47.333333,13.333333,46,105,72869
+MO,Macao,Waffen & Munition,47.333333,13.333333,22.157778,113.559722,566707
+MR,Mauritania,Waffen & Munition,47.333333,13.333333,20,-12,1094
+MT,Malta,Waffen & Munition,47.333333,13.333333,35.916667,14.433333,125735
+MU,Mauritius,Waffen & Munition,47.333333,13.333333,-20.3,57.583333,807915
+MV,Maldives,Waffen & Munition,47.333333,13.333333,3.2,73,2681
+MW,Malawi,Waffen & Munition,47.333333,13.333333,-13.5,34,461
+MX,Mexico,Waffen & Munition,47.333333,13.333333,23,-102,11938541
+MY,Malaysia,Waffen & Munition,47.333333,13.333333,2.5,112.5,4638513
+"NA",Namibia,Waffen & Munition,47.333333,13.333333,NA,NA,738120
+NC,New Caledonia,Waffen & Munition,47.333333,13.333333,-21.5,165.5,619289
+NI,Nicaragua,Waffen & Munition,47.333333,13.333333,13,-85,382284
+NL,Netherlands,Waffen & Munition,47.333333,13.333333,52.5,5.75,17917864
+NO,Norway,Waffen & Munition,47.333333,13.333333,62,10,9696685
+NP,Nepal,Waffen & Munition,47.333333,13.333333,28,84,1578414
+NZ,New Zealand,Waffen & Munition,47.333333,13.333333,-42,174,8458087
+OM,Oman,Waffen & Munition,47.333333,13.333333,21,57,56199201
+PA,Panama,Waffen & Munition,47.333333,13.333333,9,-80,3251388
+PE,Peru,Waffen & Munition,47.333333,13.333333,-10,-76,3886404
+PG,Papua New Guinea,Waffen & Munition,47.333333,13.333333,-6,147,16044
+PH,Philippines,Waffen & Munition,47.333333,13.333333,13,122,1359400
+PK,Pakistan,Waffen & Munition,47.333333,13.333333,30,70,700051
+PL,Poland,Waffen & Munition,47.333333,13.333333,52,20,7716734
+PT,Portugal,Waffen & Munition,47.333333,13.333333,39.5,-8,542414
+PW,Palau,Waffen & Munition,47.333333,13.333333,6,134,5944
+PY,Paraguay,Waffen & Munition,47.333333,13.333333,-22.993333,-57.996389,1414553
+QA,Qatar,Waffen & Munition,47.333333,13.333333,25.5,51.25,1687515
+RO,Romania,Waffen & Munition,47.333333,13.333333,46,25,2351181
+RS,Serbia,Waffen & Munition,47.333333,13.333333,44,21,1944370
+RU,Russia,Waffen & Munition,47.333333,13.333333,60,100,44683770
+SA,Saudi Arabia,Waffen & Munition,47.333333,13.333333,25,45,47941868
+SE,Sweden,Waffen & Munition,47.333333,13.333333,62,15,14326251
+SG,Singapore,Waffen & Munition,47.333333,13.333333,1.366667,103.8,6187628
+SI,Slovenia,Waffen & Munition,47.333333,13.333333,46.25,15.166667,1491260
+SK,Slovakia,Waffen & Munition,47.333333,13.333333,48.666667,19.5,1727706
+SM,San Marino,Waffen & Munition,47.333333,13.333333,43.933333,12.416667,2153
+SN,Senegal,Waffen & Munition,47.333333,13.333333,14,-14,101720
+SR,Suriname,Waffen & Munition,47.333333,13.333333,4,-56,221558
+SV,El Salvador,Waffen & Munition,47.333333,13.333333,13.833333,-88.916667,92909
+TG,Togo,Waffen & Munition,47.333333,13.333333,8,1.166667,8200
+TH,Thailand,Waffen & Munition,47.333333,13.333333,15,100,19372179
+TJ,Tajikistan,Waffen & Munition,47.333333,13.333333,39,71,296553
+TL,East Timor,Waffen & Munition,47.333333,13.333333,-8.833333,125.75,4422
+TM,Turkmenistan,Waffen & Munition,47.333333,13.333333,40,60,1900
+TN,Tunisia,Waffen & Munition,47.333333,13.333333,34,9,7991212
+TO,Tonga,Waffen & Munition,47.333333,13.333333,-20,-175,3985
+TR,Turkey,Waffen & Munition,47.333333,13.333333,39.059012,34.911546,11844219
+TT,Trinidad & Tobago,Waffen & Munition,47.333333,13.333333,11,-61,1500747
+TW,Taiwan,Waffen & Munition,47.333333,13.333333,24,121,545603
+TZ,Tanzania,Waffen & Munition,47.333333,13.333333,-6,35,1380691
+UA,Ukraine,Waffen & Munition,47.333333,13.333333,49,32,9737127
+UG,Uganda,Waffen & Munition,47.333333,13.333333,2,33,36377
+US,United States,Waffen & Munition,47.333333,13.333333,39.828175,-98.5795,1913951562
+UY,Uruguay,Waffen & Munition,47.333333,13.333333,-33,-56,13936630
+UZ,Uzbekistan,Waffen & Munition,47.333333,13.333333,41.707542,63.84911,43434
+VA,Vatican,Waffen & Munition,47.333333,13.333333,41.9,12.45,13656
+VC,Saint Vincent & The Grenadines,Waffen & Munition,47.333333,13.333333,13.083333,-61.2,50890
+VE,Venezuela,Waffen & Munition,47.333333,13.333333,8,-66,177849
+VN,Vietnam,Waffen & Munition,47.333333,13.333333,16.166667,107.833333,43552
+YE,Yemen,Waffen & Munition,47.333333,13.333333,15.5,47.5,231092
+ZA,South Africa,Waffen & Munition,47.333333,13.333333,-30,26,14375803
+ZM,Zambia,Waffen & Munition,47.333333,13.333333,-15,30,564583
+NA,Kosovo,Waffen & Munition,47.333333,13.333333,-22.333333,40.366667,548441
+NA,Kosovo,Waffen & Munition,47.333333,13.333333,-22,17,548441
+NA,Kosovo,Waffen & Munition,47.333333,13.333333,-21.416667,39.7,548441
+NA,Kosovo,Waffen & Munition,47.333333,13.333333,-17.5,151,548441
+NA,Kosovo,Waffen & Munition,47.333333,13.333333,-17.05833,42.71667,548441
+NA,Kosovo,Waffen & Munition,47.333333,13.333333,-15.866667,54.416667,548441
+NA,Kosovo,Waffen & Munition,47.333333,13.333333,-12.416667,123.333333,548441
+NA,Kosovo,Waffen & Munition,47.333333,13.333333,-11.5,47.333333,548441
+NA,Kosovo,Waffen & Munition,47.333333,13.333333,10.283333,-109.216667,548441
+NA,Kosovo,Waffen & Munition,47.333333,13.333333,42.583333,21,548441
+NA,Netherlands Antilles,Waffen & Munition,47.333333,13.333333,-22.333333,40.366667,19500
+NA,Netherlands Antilles,Waffen & Munition,47.333333,13.333333,-22,17,19500
+NA,Netherlands Antilles,Waffen & Munition,47.333333,13.333333,-21.416667,39.7,19500
+NA,Netherlands Antilles,Waffen & Munition,47.333333,13.333333,-17.5,151,19500
+NA,Netherlands Antilles,Waffen & Munition,47.333333,13.333333,-17.05833,42.71667,19500
+NA,Netherlands Antilles,Waffen & Munition,47.333333,13.333333,-15.866667,54.416667,19500
+NA,Netherlands Antilles,Waffen & Munition,47.333333,13.333333,-12.416667,123.333333,19500
+NA,Netherlands Antilles,Waffen & Munition,47.333333,13.333333,-11.5,47.333333,19500
+NA,Netherlands Antilles,Waffen & Munition,47.333333,13.333333,10.283333,-109.216667,19500
+NA,Netherlands Antilles,Waffen & Munition,47.333333,13.333333,42.583333,21,19500

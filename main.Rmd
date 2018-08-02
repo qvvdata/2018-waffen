@@ -168,13 +168,14 @@ exports_timeat <- exports %>%
   group_by(jahr)%>%
   summarise(mlsum= sum(value))
 
-write_excel_csv(exports_sumat, "output/exports_sumat.csv")
+write_excel_csv(exports_sumat, "output/exports_timeat")
 
 #Wohin gehen österreichische Waffen- und Munitionsexporte
 exports_destination_at <- exports %>%
   filter(category =="c") %>%
   filter(name_source_country == "Austria" & wkdok=="Waffen & Munition")%>%
-  group_by(iso_destination_country, name_destination_country)%>%
+  group_by(iso_destination_country, name_destination_country, wkdok,
+           lat_source_country, long_source_country, lat_destination_country, long_destination_country)%>%
   summarise(mlsum= sum(value))
 
 write_excel_csv(exports_destination_at, "output/exports_destination_at.csv")
