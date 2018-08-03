@@ -1,8 +1,8 @@
 ---
-title: "Hier muss ein Titel rein"
-subtitle: "Und ein Untertitel"
+title: "waffenbranche"
+subtitle: "analyse der firmen und exporte"
 author: "tbd"
-date: "MM-YYYY"
+date: "07-2018"
 output:
   html_document:
     code_folding: show
