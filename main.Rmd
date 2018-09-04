@@ -141,7 +141,7 @@ sessionInfo()
 knitr::read_chunk("scripts/theme_addendum.R")
 source("./scripts/theme_addendum.R")
 source("./scripts/BorderMan.R")
-#source("./scripts/01-preprocessing.R")
+source("./scripts/01-preprocessing.R")
 cat(getwd())
 options(scipen=999)
 
@@ -153,13 +153,24 @@ options(scipen=999)
 ```{r, echo=TRUE, message=FALSE, warning=FALSE}
 #WHAT ARE THE RELEVANT ML-CATEGORIES FOR AUSTRIA FOR EXPORTED GOODS?
 
-exports_sumat <- exports %>%
-  filter(category =="c") %>%
+
+
+
+exports_for_export <- exports %>%
+  left_join(sparte_schoen %>% select(wkdok,schön), by=c(wkdok="wkdok")) %>%
+  mutate(wkdok = case_when(is.na(schön) ~ wkdok,
+                           TRUE ~ schön)) %>%
+  select(-schön)
+
+exports_sumat <- exports_for_export %>%
+  filter(category == "c") %>%
   filter(name_source_country == "Austria")%>%
   group_by(wkdok)%>%
   summarise(mlsum= sum(value))
 
 write_excel_csv(exports_sumat, "output/exports_sumat.csv")
+write.csv(exports_sumat %>% rename(value=mlsum, name=wkdok), 'interaktiv/waffen-scroller/src/data/exports_sumat.csv', fileEncoding='utf-8', row.names = F)
+
 
 #Entwicklung von Waffen und Munition
 exports_timeat <- exports %>%
@@ -170,17 +181,21 @@ exports_timeat <- exports %>%
 
 write_excel_csv(exports_sumat, "output/exports_timeat")
 
+
 #Wohin gehen österreichische Waffen- und Munitionsexporte
-exports_destination_at <- exports %>%
+exports_destination_at <- exports_for_export %>%
   filter(category =="c") %>%
-  filter(name_source_country == "Austria" & wkdok=="Waffen & Munition")%>%
+  mutate(iso_destination_country = case_when(name_destination_country == "Kosovo" ~ "XK", TRUE ~ iso_destination_country)) %>%
+  filter(!is.na(iso_destination_country)) %>%
+  filter(name_source_country == "Austria") %>%
   group_by(iso_destination_country, name_destination_country, wkdok,
-           lat_source_country, long_source_country, lat_destination_country, long_destination_country)%>%
-  summarise(mlsum= sum(value))
+           lat_source_country, long_source_country, lat_destination_country, long_destination_country) %>%
+  summarise(mlsum= sum(value)) %>% arrange(-mlsum)
 
 write_excel_csv(exports_destination_at, "output/exports_destination_at.csv")
+write.csv(exports_destination_at, 'interaktiv/waffen-scroller/src/data/exports_countries.csv', fileEncoding='utf-8', row.names = F)
 
-#
+
 
 ```
 
