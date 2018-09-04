@@ -38,8 +38,8 @@ austria_companies.sort(
 
 var rscale = scale
   .scaleThreshold()
-  .range([3, 6, 10, 20])
-  .domain([0, 50, 200]);
+  .domain([50, 200])
+  .range([6, 10, 20]);
 
 export default {
   name: "WaffenViz",
@@ -71,13 +71,33 @@ export default {
     on_resize() {
       var h = 450;
       var iw = this.$el.clientWidth;
-      if (iw < 500) {
-        h = iw * 0.9;
+
+      if (this.auswahl) {
+        if (iw < 500) {
+          h = iw * 0.9;
+        }
+        if (iw < 300) {
+          h = 280;
+        }
+      } else {
+        if (iw > 700) {
+          h = window.innerHeight * 0.6;
+        } else {
+          h = window.innerHeight * 0.4;
+        }
       }
-      if (iw < 300) {
-        h = 280;
-      }
+
       this.height = h;
+    },
+    groformat(z) {
+      var gro = ["", "tsd", "mio", "mrd"];
+      var i = 0;
+      var y = z;
+      while (y > 1000 && i < gro.length - 1) {
+        y = (y * 1.0) / 1000;
+        i++;
+      }
+      return `${this.$fmt(".1f")(y)}${gro[i]}`;
     },
     zoom_to_change($event) {
       if (!this.auswahl) {
@@ -134,9 +154,12 @@ export default {
       }
 
       if (["map3", "map4"].indexOf(this.state) >= 0) {
-        this.gj2.setStyle(d => {
+        this.gj2.setStyle(x => {
           var r = this.relevant_exports.filter(
-            x => x.iso_destination_country == d.properties.ISO_A2
+            d =>
+              d.iso_destination_country == x.properties.ISO_A2 ||
+              d.iso_destination_country_3 == x.properties.SOV_A3 ||
+              d.iso_destination_country_3 == x.properties.ISO_A3_EH
           )[0];
 
           if (!r) {
@@ -147,7 +170,7 @@ export default {
             };
           } else {
             r.has_feature = true;
-            all_relevant_features.push(d);
+            all_relevant_features.push(x);
             return {
               fillColor: colorscale(r.mlsum),
               fillOpacity: 1,
@@ -166,6 +189,17 @@ export default {
           fillOpacity: 0
         });
       }
+
+      if (this.state == "map1") {
+        if (!this.legend._map) {
+          this.legend.addTo(this.map);
+        }
+      } else {
+        if (this.legend._map) {
+          this.map.removeControl(this.legend);
+        }
+      }
+
       if (this.state == "init") {
         // treemap
         this.show_layers([this.tlbc]);
@@ -197,7 +231,7 @@ export default {
               {
                 animate: true,
                 duration: 0.5,
-                padding: [40, 40]
+                padding: [44, 40]
               }
             );
           }, 500);
@@ -245,7 +279,10 @@ export default {
         attribution: "NaturalEarth",
         onEachFeature: (feature, layer) => {
           var r = austria_exports.filter(
-            x => x.iso_destination_country == feature.properties.ISO_A2
+            x =>
+              x.iso_destination_country == feature.properties.ISO_A2 ||
+              x.iso_destination_country_3 == feature.properties.SOV_A3 ||
+              x.iso_destination_country_3 == feature.properties.ISO_A3_EH
           );
           if (r.length > 0) {
             layer.bindPopup(
@@ -258,7 +295,7 @@ export default {
                       r =>
                         `<${this.zoom_to == r.wkdok ? "b" : "span"}>${
                           r.wkdok
-                        }: ${this.$fmt(",d")(r.mlsum)}</${
+                        }: € ${this.$fmt(",d")(r.mlsum)}</${
                           this.zoom_to == r.wkdok ? "b" : "span"
                         }>`
                     )
@@ -292,8 +329,9 @@ export default {
       var color = d3.hsl(this.colorscale(this.zoom_to));
       color.l = Math.min(color.l, 0.5);
       this.companycircles = L.featureGroup(
-        this.relevant_companies.map(d =>
-          new L.CircleMarker([d.lat, d.long], {
+        this.relevant_companies.map(d => {
+          var otherbranches = austria_companies.filter(x => x.Name == d.Name);
+          return new L.CircleMarker([d.lat, d.long], {
             radius: isNaN(parseInt(d.beschaeftigte, 10))
               ? 5
               : rscale(d.beschaeftigte),
@@ -306,14 +344,25 @@ export default {
             L.responsivePopup({
               maxWidth: Math.min(300, window.innerWidth * 0.8)
             }).setContent(
-              `<h3>${d.name}</h3>
-              ${d.beschaeftigte}<br />
-              ${d.typ}<br />
-              ${d.beschreibung}
-            `
+              `<h3>${d.Name}</h3>
+                          ${
+                            d.Beschreibung != "NA"
+                              ? d.Beschreibung + "<br />"
+                              : ""
+                          }
+                          Beschäftigte: ${d.beschaeftigte}<br />
+                          Branchen: ${otherbranches
+                            .map(
+                              d2 =>
+                                `<${d2.typ == d.typ ? "b" : "span"}>${
+                                  d2.typ
+                                }</${d2.typ == d.typ ? "b" : "span"}>`
+                            )
+                            .join(", ")}
+                        `
             )
-          )
-        )
+          );
+        })
       );
 
       var top3exports = this.relevant_exports.slice(0, 3).map(d => [
@@ -323,7 +372,7 @@ export default {
           [d.lat_destination_country, d.long_destination_country],
           {
             weight: Math.log(d.mlsum) / 10,
-            label: d.name_destination_country,
+            label: `${d.name_destination_country}: ${this.groformat(d.mlsum)}`,
             labelAt: "to",
             iconAnchor: [50, 15],
             labelClassName: "swoopy_lbl"
@@ -331,7 +380,10 @@ export default {
         ),
         L.marker([d.lat_destination_country, d.long_destination_country]),
         this.allfeatures.features.filter(
-          x => x.properties.ISO_A2 == d.iso_destination_country
+          x =>
+            d.iso_destination_country == x.properties.ISO_A2 ||
+            d.iso_destination_country_3 == x.properties.SOV_A3 ||
+            d.iso_destination_country_3 == x.properties.ISO_A3_EH
         )[0]
       ]);
 
@@ -348,6 +400,63 @@ export default {
           }
         }
       );
+
+      var legend = L.control({ position: "bottomleft" });
+      legend.onAdd = () => {
+        var div = L.DomUtil.create("div", "info legend");
+        var color = d3.hsl(this.colorscale(this.zoom_to));
+        color.l = Math.min(color.l, 0.5);
+
+        var c0 = d3.rgb(color);
+        c0.opacity = 0.5;
+
+        var c1 = d3.rgb(color);
+        c1.opacity = 0.7;
+
+        var ih1 = rscale
+          .range()
+          .map(
+            (
+              d,
+              i
+            ) => `<div style="display: inline-block; vertical-align: baseline;"><span style="border-radius: ${d}px;
+                                width: ${d}px;
+                                height: ${d}px;
+                                display: inline-block;
+                                background: ${c0};
+                                border: 2px solid ${c1};
+                                vertical-align: baseline;
+                              "></span>${
+                                rscale.domain()[i] ? rscale.domain()[i] : ""
+                              }</div>`
+          )
+          .join("");
+
+        c0 = d3.rgb("#2e3f37");
+        c0.opacity = 0.5;
+
+        c1 = d3.rgb("#2e3f37");
+        c1.opacity = 0.7;
+
+        div.innerHTML = `<b>Mitarbeiter:</b> ?: <span style="border-radius: 5px;
+                              width: 5px;
+                              height: 5px;
+                              display: inline-block;
+                              background: ${c0};
+                              border: 2px solid ${c1};
+                              vertical-align: baseline;
+                            "></span> | 0${ih1}`;
+
+        return div;
+      };
+
+      if (this.legend) {
+        if (this.legend._map) {
+          this.map.removeControl(this.legend);
+        }
+      }
+
+      this.legend = legend;
     }
   },
   watch: {
@@ -426,7 +535,6 @@ export default {
   background: none;
   height: 100%;
   width: 100%;
-  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   font: 12px/1.5 Sailec, "Helvetica Neue", Arial, Helvetica, sans-serif;

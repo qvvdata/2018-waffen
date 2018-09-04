@@ -185,12 +185,14 @@ write_excel_csv(exports_sumat, "output/exports_timeat")
 #Wohin gehen österreichische Waffen- und Munitionsexporte
 exports_destination_at <- exports_for_export %>%
   filter(category =="c") %>%
-  mutate(iso_destination_country = case_when(name_destination_country == "Kosovo" ~ "XK", TRUE ~ iso_destination_country)) %>%
+  #mutate(iso_destination_country = case_when(name_destination_country == "Kosovo" ~ "XK", TRUE ~ iso_destination_country)) %>%
+  mutate(iso_destination_country_3 = case_when(name_destination_country == "Kosovo" ~ "KOS", TRUE ~ iso_destination_country_3)) %>%
   filter(!is.na(iso_destination_country)) %>%
   filter(name_source_country == "Austria") %>%
-  group_by(iso_destination_country, name_destination_country, wkdok,
+  group_by(iso_destination_country, iso_destination_country_3, name_destination_country_de, wkdok,
            lat_source_country, long_source_country, lat_destination_country, long_destination_country) %>%
-  summarise(mlsum= sum(value)) %>% arrange(-mlsum)
+  summarise(mlsum= sum(value)) %>% arrange(-mlsum) %>% rename(name_destination_country="name_destination_country_de")
+
 
 write_excel_csv(exports_destination_at, "output/exports_destination_at.csv")
 write.csv(exports_destination_at, 'interaktiv/waffen-scroller/src/data/exports_countries.csv', fileEncoding='utf-8', row.names = F)

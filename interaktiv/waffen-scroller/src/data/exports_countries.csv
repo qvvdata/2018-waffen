@@ -1,354 +1,345 @@
-"iso_destination_country","name_destination_country","wkdok","lat_source_country","long_source_country","lat_destination_country","long_destination_country","mlsum"
-"US","United States","Waffen & Munition",47.333333,13.333333,39.828175,-98.5795,1913951562
-"DZ","Algeria","Fahrzeuge & Zubehör",47.333333,13.333333,28,3,294245238
-"GB","United Kingdom","Waffen & Munition",47.333333,13.333333,54,-4,253866151
-"KW","Kuwait","Fahrzeuge & Zubehör",47.333333,13.333333,29.5,47.75,188759065
-"CZ","Czech Republic","Fahrzeuge & Zubehör",47.333333,13.333333,49.75,15,185120004
-"AE","United Arab Emirates","Fahrzeuge & Zubehör",47.333333,13.333333,24,54,168352900
-"AU","Australia","Fahrzeuge & Zubehör",47.333333,13.333333,-25,135,152475263
-"CH","Switzerland","Fahrzeuge & Zubehör",47.333333,13.333333,47,8,106852228
-"PT","Portugal","Fahrzeuge & Zubehör",47.333333,13.333333,39.5,-8,76834785
-"OM","Oman","Fahrzeuge & Zubehör",47.333333,13.333333,21,57,71103035
-"CH","Switzerland","Waffen & Munition",47.333333,13.333333,47,8,57677174
-"OM","Oman","Waffen & Munition",47.333333,13.333333,21,57,56199201
-"DE","Germany","Fahrzeuge & Zubehör",47.333333,13.333333,51.5,10.5,48498211
-"SA","Saudi Arabia","Waffen & Munition",47.333333,13.333333,25,45,47941868
-"CA","Canada","Waffen & Munition",47.333333,13.333333,60,-96,45258789
-"US","United States","Personal-Ausrüstung",47.333333,13.333333,39.828175,-98.5795,45117577
-"RU","Russia","Waffen & Munition",47.333333,13.333333,60,100,44683770
-"IT","Italy","Waffen & Munition",47.333333,13.333333,42.833333,12.833333,37811979
-"DE","Germany","Personal-Ausrüstung",47.333333,13.333333,51.5,10.5,27414048
-"US","United States","Fahrzeuge & Zubehör",47.333333,13.333333,39.828175,-98.5795,27324760
-"DE","Germany","Andere",47.333333,13.333333,51.5,10.5,27132955
-"SG","Singapore","Fahrzeuge & Zubehör",47.333333,13.333333,1.366667,103.8,23427723
-"AE","United Arab Emirates","Waffen & Munition",47.333333,13.333333,24,54,22361840
-"IQ","Iraq","Waffen & Munition",47.333333,13.333333,33,44,21617366
-"AU","Australia","Waffen & Munition",47.333333,13.333333,-25,135,20217241
-"TH","Thailand","Waffen & Munition",47.333333,13.333333,15,100,19372179
-"CZ","Czech Republic","Waffen & Munition",47.333333,13.333333,49.75,15,18852578
-"ID","Indonesia","Waffen & Munition",47.333333,13.333333,-5,120,18559869
-"NL","Netherlands","Waffen & Munition",47.333333,13.333333,52.5,5.75,17917864
-"DE","Germany","IT",47.333333,13.333333,51.5,10.5,17727433
-"BR","Brazil","Andere",47.333333,13.333333,-10,-55,17154839
-"DE","Germany","Waffen & Munition",47.333333,13.333333,51.5,10.5,16565485
-"KW","Kuwait","Waffen & Munition",47.333333,13.333333,29.5,47.75,14837108
-"ZA","South Africa","Waffen & Munition",47.333333,13.333333,-30,26,14375803
-"SE","Sweden","Waffen & Munition",47.333333,13.333333,62,15,14326251
-"UY","Uruguay","Waffen & Munition",47.333333,13.333333,-33,-56,13936630
-"MX","Mexico","Waffen & Munition",47.333333,13.333333,23,-102,11938541
-"TR","Turkey","Waffen & Munition",47.333333,13.333333,39.059012,34.911546,11844219
-"UA","Ukraine","Fahrzeuge & Zubehör",47.333333,13.333333,49,32,11168754
-"IE","Ireland","Waffen & Munition",47.333333,13.333333,53,-8,11116103
-"JO","Jordan","Fahrzeuge & Zubehör",47.333333,13.333333,31,36,10365602
-"UA","Ukraine","Waffen & Munition",47.333333,13.333333,49,32,9737127
-"FR","France","Waffen & Munition",47.333333,13.333333,46,2,9707118
-"NO","Norway","Waffen & Munition",47.333333,13.333333,62,10,9696685
-"GB","United Kingdom","Fahrzeuge & Zubehör",47.333333,13.333333,54,-4,8466468
-"NZ","New Zealand","Waffen & Munition",47.333333,13.333333,-42,174,8458087
-"VN","Vietnam","Fahrzeuge & Zubehör",47.333333,13.333333,16.166667,107.833333,8402000
-"TN","Tunisia","Waffen & Munition",47.333333,13.333333,34,9,7991212
-"PL","Poland","Waffen & Munition",47.333333,13.333333,52,20,7716734
-"TM","Turkmenistan","Fahrzeuge & Zubehör",47.333333,13.333333,40,60,7370595
-"IT","Italy","Personal-Ausrüstung",47.333333,13.333333,42.833333,12.833333,7027030
-"IT","Italy","Andere",47.333333,13.333333,42.833333,12.833333,7008675
-"DK","Denmark","Waffen & Munition",47.333333,13.333333,56,10,6756045
-"BR","Brazil","Waffen & Munition",47.333333,13.333333,-10,-55,6660161
-"LT","Lithuania","Waffen & Munition",47.333333,13.333333,56,24,6622146
-"LV","Latvia","Waffen & Munition",47.333333,13.333333,57,25,6561690
-"SG","Singapore","Waffen & Munition",47.333333,13.333333,1.366667,103.8,6187628
-"JP","Japan","Waffen & Munition",47.333333,13.333333,36,138,6058976
-"HR","Croatia","Waffen & Munition",47.333333,13.333333,45.166667,15.5,5983218
-"DZ","Algeria","Waffen & Munition",47.333333,13.333333,28,3,5921160
-"BW","Botswana","Fahrzeuge & Zubehör",47.333333,13.333333,-22,24,5454828
-"IN","India","Waffen & Munition",47.333333,13.333333,20,77,4967853
-"TN","Tunisia","Andere",47.333333,13.333333,34,9,4792202
-"SA","Saudi Arabia","Personal-Ausrüstung",47.333333,13.333333,25,45,4759588
-"TH","Thailand","Fahrzeuge & Zubehör",47.333333,13.333333,15,100,4655007
-"MY","Malaysia","Waffen & Munition",47.333333,13.333333,2.5,112.5,4638513
-"PK","Pakistan","Fahrzeuge & Zubehör",47.333333,13.333333,30,70,4474494
-"BG","Bulgaria","Waffen & Munition",47.333333,13.333333,43,25,4431428
-"ES","Spain","Waffen & Munition",47.333333,13.333333,40,-4,4345098
-"LU","Luxembourg","Waffen & Munition",47.333333,13.333333,49.75,6.166667,4254813
-"BA","Bosnia & Herzegovina","Waffen & Munition",47.333333,13.333333,44.25,17.833333,4240824
-"CH","Switzerland","Personal-Ausrüstung",47.333333,13.333333,47,8,4019649
-"ES","Spain","Fahrzeuge & Zubehör",47.333333,13.333333,40,-4,3994573
-"AR","Argentina","Waffen & Munition",47.333333,13.333333,-34,-64,3974549
-"PE","Peru","Waffen & Munition",47.333333,13.333333,-10,-76,3886404
-"NO","Norway","Fahrzeuge & Zubehör",47.333333,13.333333,62,10,3873184
-"JO","Jordan","Waffen & Munition",47.333333,13.333333,31,36,3691529
-"ES","Spain","Personal-Ausrüstung",47.333333,13.333333,40,-4,3427695
-"TR","Turkey","Personal-Ausrüstung",47.333333,13.333333,39.059012,34.911546,3337761
-"KZ","Kazakhstan","Waffen & Munition",47.333333,13.333333,48,68,3319451
-"PA","Panama","Waffen & Munition",47.333333,13.333333,9,-80,3251388
-"MA","Morocco","Fahrzeuge & Zubehör",47.333333,13.333333,32,-5,3204402
-"BE","Belgium","Fahrzeuge & Zubehör",47.333333,13.333333,50.833333,4,3138971
-"IN","India","IT",47.333333,13.333333,20,77,3000000
-"IR","Iran","Waffen & Munition",47.333333,13.333333,32,53,2924710
-"KW","Kuwait","IT",47.333333,13.333333,29.5,47.75,2832959
-"CL","Chile","Waffen & Munition",47.333333,13.333333,-30,-71,2719295
-"CA","Canada","Fahrzeuge & Zubehör",47.333333,13.333333,60,-96,2680155
-"SA","Saudi Arabia","Fahrzeuge & Zubehör",47.333333,13.333333,25,45,2658332
-"IT","Italy","Fahrzeuge & Zubehör",47.333333,13.333333,42.833333,12.833333,2544920
-"HR","Croatia","Fahrzeuge & Zubehör",47.333333,13.333333,45.166667,15.5,2524675
-"CA","Canada","Andere",47.333333,13.333333,60,-96,2513305
-"KR","South Korea","Waffen & Munition",47.333333,13.333333,37,127.5,2399409
-"BE","Belgium","Waffen & Munition",47.333333,13.333333,50.833333,4,2378091
-"RO","Romania","Waffen & Munition",47.333333,13.333333,46,25,2351181
-"CH","Switzerland","Andere",47.333333,13.333333,47,8,2320390
-"KR","South Korea","Fahrzeuge & Zubehör",47.333333,13.333333,37,127.5,2293360
-"AR","Argentina","Fahrzeuge & Zubehör",47.333333,13.333333,-34,-64,2211706
-"JP","Japan","Fahrzeuge & Zubehör",47.333333,13.333333,36,138,2164900
-"HU","Hungary","Waffen & Munition",47.333333,13.333333,47,20,2149200
-"FI","Finland","Waffen & Munition",47.333333,13.333333,64,26,2013390
-"SI","Slovenia","Andere",47.333333,13.333333,46.25,15.166667,2000000
-"GB","United Kingdom","Andere",47.333333,13.333333,54,-4,1963821
-"RS","Serbia","Waffen & Munition",47.333333,13.333333,44,21,1944370
-"MT","Malta","Andere",47.333333,13.333333,35.916667,14.433333,1912146
-"ME","Montenegro","Fahrzeuge & Zubehör",47.333333,13.333333,42.5,19.3,1885200
-"PL","Poland","Fahrzeuge & Zubehör",47.333333,13.333333,52,20,1837612
-"LY","Libya","Andere",47.333333,13.333333,25,17,1798840
-"TR","Turkey","Fahrzeuge & Zubehör",47.333333,13.333333,39.059012,34.911546,1755646
-"FR","France","Personal-Ausrüstung",47.333333,13.333333,46,2,1745464
-"MK","Macedonia","Waffen & Munition",47.333333,13.333333,41.833333,22,1741480
-"SK","Slovakia","Waffen & Munition",47.333333,13.333333,48.666667,19.5,1727706
-"JO","Jordan","IT",47.333333,13.333333,31,36,1722880
-"AE","United Arab Emirates","Andere",47.333333,13.333333,24,54,1693789
-"QA","Qatar","Waffen & Munition",47.333333,13.333333,25.5,51.25,1687515
-"AU","Australia","Personal-Ausrüstung",47.333333,13.333333,-25,135,1629326
-"AF","Afghanistan","Fahrzeuge & Zubehör",47.333333,13.333333,33,66,1608141
-"US","United States","Andere",47.333333,13.333333,39.828175,-98.5795,1601482
-"NP","Nepal","Waffen & Munition",47.333333,13.333333,28,84,1578414
-"KR","South Korea","Andere",47.333333,13.333333,37,127.5,1575259
-"IN","India","Personal-Ausrüstung",47.333333,13.333333,20,77,1561900
-"TT","Trinidad & Tobago","Waffen & Munition",47.333333,13.333333,11,-61,1500747
-"SI","Slovenia","Waffen & Munition",47.333333,13.333333,46.25,15.166667,1491260
-"SA","Saudi Arabia","Andere",47.333333,13.333333,25,45,1459051
-"PY","Paraguay","Waffen & Munition",47.333333,13.333333,-22.993333,-57.996389,1414553
-"HU","Hungary","Fahrzeuge & Zubehör",47.333333,13.333333,47,20,1406579
-"TZ","Tanzania","Waffen & Munition",47.333333,13.333333,-6,35,1380691
-"PH","Philippines","Waffen & Munition",47.333333,13.333333,13,122,1359400
-"BN","Brunei Darussalam","Waffen & Munition",47.333333,13.333333,4.5,114.666667,1329993
-"VE","Venezuela","Fahrzeuge & Zubehör",47.333333,13.333333,8,-66,1210579
-"ID","Indonesia","Fahrzeuge & Zubehör",47.333333,13.333333,-5,120,1205294
-"MY","Malaysia","Fahrzeuge & Zubehör",47.333333,13.333333,2.5,112.5,1179400
-"BR","Brazil","Personal-Ausrüstung",47.333333,13.333333,-10,-55,1170776
-"NE","Niger","Andere",47.333333,13.333333,16,8,1100000
-"BR","Brazil","Fahrzeuge & Zubehör",47.333333,13.333333,-10,-55,1098372
-"BE","Belgium","Personal-Ausrüstung",47.333333,13.333333,50.833333,4,1084255
-"KR","South Korea","Personal-Ausrüstung",47.333333,13.333333,37,127.5,1036487
-"ME","Montenegro","Waffen & Munition",47.333333,13.333333,42.5,19.3,994250
-"NZ","New Zealand","Andere",47.333333,13.333333,-42,174,990000
-"KE","Kenya","Waffen & Munition",47.333333,13.333333,1,38,980013
-"BG","Bulgaria","Fahrzeuge & Zubehör",47.333333,13.333333,43,25,960000
-"LB","Lebanon","Waffen & Munition",47.333333,13.333333,33.833333,35.833333,933699
-"BH","Bahrain","Waffen & Munition",47.333333,13.333333,26,50.5,885203
-"OM","Oman","IT",47.333333,13.333333,21,57,882482
-"AE","United Arab Emirates","Personal-Ausrüstung",47.333333,13.333333,24,54,880391
-"BJ","Benin","Waffen & Munition",47.333333,13.333333,9.5,2.25,879648
-"JO","Jordan","Andere",47.333333,13.333333,31,36,872760
-"QA","Qatar","Fahrzeuge & Zubehör",47.333333,13.333333,25.5,51.25,830349
-"MU","Mauritius","Waffen & Munition",47.333333,13.333333,-20.3,57.583333,807915
-"ZA","South Africa","Personal-Ausrüstung",47.333333,13.333333,-30,26,807158
-"TW","Taiwan","Fahrzeuge & Zubehör",47.333333,13.333333,24,121,798000
-"GA","Gabon","Fahrzeuge & Zubehör",47.333333,13.333333,-1,11.75,768806
-"NA","Namibia","Waffen & Munition",47.333333,13.333333,NA,NA,738120
-"EG","Egypt","Waffen & Munition",47.333333,13.333333,27,30,735255
-"US","United States","IT",47.333333,13.333333,39.828175,-98.5795,722636
-"TW","Taiwan","Personal-Ausrüstung",47.333333,13.333333,24,121,713338
-"CL","Chile","Fahrzeuge & Zubehör",47.333333,13.333333,-30,-71,712220
-"PK","Pakistan","Waffen & Munition",47.333333,13.333333,30,70,700051
-"CN","China","Fahrzeuge & Zubehör",47.333333,13.333333,35,105,700000
-"MD","Moldova","Waffen & Munition",47.333333,13.333333,47,29,699579
-"EC","Ecuador","Waffen & Munition",47.333333,13.333333,-2,-77.5,687500
-"HR","Croatia","Personal-Ausrüstung",47.333333,13.333333,45.166667,15.5,683572
-"AF","Afghanistan","Waffen & Munition",47.333333,13.333333,33,66,670143
-"JP","Japan","Personal-Ausrüstung",47.333333,13.333333,36,138,638594
-"AZ","Azerbaijan","Waffen & Munition",47.333333,13.333333,40.5,47.5,632454
-"NC","New Caledonia","Waffen & Munition",47.333333,13.333333,-21.5,165.5,619289
-"CL","Chile","Personal-Ausrüstung",47.333333,13.333333,-30,-71,618173
-"TN","Tunisia","Fahrzeuge & Zubehör",47.333333,13.333333,34,9,609767
-"CO","Colombia","Personal-Ausrüstung",47.333333,13.333333,4,-72,580491
-"TN","Tunisia","Personal-Ausrüstung",47.333333,13.333333,34,9,572674
-"MO","Macao","Waffen & Munition",47.333333,13.333333,22.157778,113.559722,566707
-"ZM","Zambia","Waffen & Munition",47.333333,13.333333,-15,30,564583
-"JM","Jamaica","Waffen & Munition",47.333333,13.333333,18.25,-77.5,554653
-"MO","Macao","Fahrzeuge & Zubehör",47.333333,13.333333,22.157778,113.559722,551985
-"XK","Kosovo","Waffen & Munition",47.333333,13.333333,-22.333333,40.366667,548441
-"XK","Kosovo","Waffen & Munition",47.333333,13.333333,-22,17,548441
-"XK","Kosovo","Waffen & Munition",47.333333,13.333333,-21.416667,39.7,548441
-"XK","Kosovo","Waffen & Munition",47.333333,13.333333,-17.5,151,548441
-"XK","Kosovo","Waffen & Munition",47.333333,13.333333,-17.05833,42.71667,548441
-"XK","Kosovo","Waffen & Munition",47.333333,13.333333,-15.866667,54.416667,548441
-"XK","Kosovo","Waffen & Munition",47.333333,13.333333,-12.416667,123.333333,548441
-"XK","Kosovo","Waffen & Munition",47.333333,13.333333,-11.5,47.333333,548441
-"XK","Kosovo","Waffen & Munition",47.333333,13.333333,10.283333,-109.216667,548441
-"XK","Kosovo","Waffen & Munition",47.333333,13.333333,42.583333,21,548441
-"TW","Taiwan","Waffen & Munition",47.333333,13.333333,24,121,545603
-"PT","Portugal","Waffen & Munition",47.333333,13.333333,39.5,-8,542414
-"NG","Nigeria","Fahrzeuge & Zubehör",47.333333,13.333333,10,8,532639
-"IT","Italy","IT",47.333333,13.333333,42.833333,12.833333,506640
-"UA","Ukraine","Personal-Ausrüstung",47.333333,13.333333,49,32,503098
-"DZ","Algeria","Personal-Ausrüstung",47.333333,13.333333,28,3,498106
-"KG","Kyrgyzstan","Waffen & Munition",47.333333,13.333333,41,75,494265
-"GB","United Kingdom","Personal-Ausrüstung",47.333333,13.333333,54,-4,493330
-"LI","Liechtenstein","Waffen & Munition",47.333333,13.333333,47.166667,9.533333,468450
-"SG","Singapore","Personal-Ausrüstung",47.333333,13.333333,1.366667,103.8,465792
-"GT","Guatemala","Waffen & Munition",47.333333,13.333333,15.5,-90.25,463133
-"BD","Bangladesh","Waffen & Munition",47.333333,13.333333,24,90,461041
-"CN","China","IT",47.333333,13.333333,35,105,456304
-"VN","Vietnam","Personal-Ausrüstung",47.333333,13.333333,16.166667,107.833333,446166
-"CO","Colombia","Fahrzeuge & Zubehör",47.333333,13.333333,4,-72,436150
-"IL","Israel","Fahrzeuge & Zubehör",47.333333,13.333333,31.5,34.75,435600
-"ZA","South Africa","Fahrzeuge & Zubehör",47.333333,13.333333,-30,26,434107
-"NZ","New Zealand","Fahrzeuge & Zubehör",47.333333,13.333333,-42,174,428536
-"RO","Romania","Personal-Ausrüstung",47.333333,13.333333,46,25,396008
-"IN","India","Fahrzeuge & Zubehör",47.333333,13.333333,20,77,392500
-"MY","Malaysia","Personal-Ausrüstung",47.333333,13.333333,2.5,112.5,389768
-"EG","Egypt","Personal-Ausrüstung",47.333333,13.333333,27,30,389402
-"EC","Ecuador","Personal-Ausrüstung",47.333333,13.333333,-2,-77.5,388044
-"NI","Nicaragua","Waffen & Munition",47.333333,13.333333,13,-85,382284
-"GE","Georgia","Waffen & Munition",47.333333,13.333333,41.999981,43.499905,379916
-"ID","Indonesia","Andere",47.333333,13.333333,-5,120,364616
-"BO","Bolivia","Waffen & Munition",47.333333,13.333333,-17,-65,358892
-"IL","Israel","IT",47.333333,13.333333,31.5,34.75,355200
-"GR","Greece","Waffen & Munition",47.333333,13.333333,39,22,353118
-"TH","Thailand","Personal-Ausrüstung",47.333333,13.333333,15,100,341599
-"CR","Costa Rica","Waffen & Munition",47.333333,13.333333,10,-84,331546
-"NO","Norway","Personal-Ausrüstung",47.333333,13.333333,62,10,312039
-"RU","Russia","Personal-Ausrüstung",47.333333,13.333333,60,100,298120
-"TJ","Tajikistan","Waffen & Munition",47.333333,13.333333,39,71,296553
-"IL","Israel","Waffen & Munition",47.333333,13.333333,31.5,34.75,283782
-"CH","Switzerland","IT",47.333333,13.333333,47,8,275800
-"TM","Turkmenistan","Andere",47.333333,13.333333,40,60,275289
-"CW","Cura√ßao","Waffen & Munition",47.333333,13.333333,12.166667,-69,274588
-"AL","Albania","Waffen & Munition",47.333333,13.333333,41,20,274110
-"DK","Denmark","Andere",47.333333,13.333333,56,10,274079
-"EG","Egypt","Fahrzeuge & Zubehör",47.333333,13.333333,27,30,266600
-"RS","Serbia","Personal-Ausrüstung",47.333333,13.333333,44,21,235042
-"YE","Yemen","Waffen & Munition",47.333333,13.333333,15.5,47.5,231092
-"SR","Suriname","Waffen & Munition",47.333333,13.333333,4,-56,221558
-"CA","Canada","Personal-Ausrüstung",47.333333,13.333333,60,-96,221021
-"MA","Morocco","Waffen & Munition",47.333333,13.333333,32,-5,215143
-"HK","Hong Kong","Waffen & Munition",47.333333,13.333333,22.25,114.166667,205924
-"LY","Libya","Waffen & Munition",47.333333,13.333333,25,17,188476
-"VE","Venezuela","Waffen & Munition",47.333333,13.333333,8,-66,177849
-"SK","Slovakia","Personal-Ausrüstung",47.333333,13.333333,48.666667,19.5,169754
-"AD","Andorra","Waffen & Munition",47.333333,13.333333,42.5,1.5,161683
-"CN","China","Personal-Ausrüstung",47.333333,13.333333,35,105,159317
-"HT","Haiti","Waffen & Munition",47.333333,13.333333,19,-72.416667,158208
-"NP","Nepal","Personal-Ausrüstung",47.333333,13.333333,28,84,156384
-"SI","Slovenia","IT",47.333333,13.333333,46.25,15.166667,145552
-"BA","Bosnia & Herzegovina","Personal-Ausrüstung",47.333333,13.333333,44.25,17.833333,139761
-"BY","Belarus","Waffen & Munition",47.333333,13.333333,53,28,139051
-"FR","France","IT",47.333333,13.333333,46,2,133984
-"CZ","Czech Republic","IT",47.333333,13.333333,49.75,15,128600
-"MT","Malta","Waffen & Munition",47.333333,13.333333,35.916667,14.433333,125735
-"IS","Iceland","Waffen & Munition",47.333333,13.333333,65,-18,124347
-"GA","Gabon","Personal-Ausrüstung",47.333333,13.333333,-1,11.75,124267
-"PE","Peru","Personal-Ausrüstung",47.333333,13.333333,-10,-76,118299
-"ID","Indonesia","Personal-Ausrüstung",47.333333,13.333333,-5,120,116135
-"TZ","Tanzania","Personal-Ausrüstung",47.333333,13.333333,-6,35,115561
-"SK","Slovakia","Fahrzeuge & Zubehör",47.333333,13.333333,48.666667,19.5,112000
-"GL","Greenland","Waffen & Munition",47.333333,13.333333,72,-40,111752
-"SE","Sweden","Fahrzeuge & Zubehör",47.333333,13.333333,62,15,111135
-"MX","Mexico","Personal-Ausrüstung",47.333333,13.333333,23,-102,108962
-"LC","Saint Lucia","Waffen & Munition",47.333333,13.333333,13.883333,-60.966667,108034
-"FI","Finland","Personal-Ausrüstung",47.333333,13.333333,64,26,105516
-"BZ","Belize","Waffen & Munition",47.333333,13.333333,17.25,-88.75,105088
-"CI","Ivory Coast","Waffen & Munition",47.333333,13.333333,8,-5,104640
-"FI","Finland","Fahrzeuge & Zubehör",47.333333,13.333333,64,26,103800
-"MX","Mexico","Fahrzeuge & Zubehör",47.333333,13.333333,23,-102,103700
-"IL","Israel","Personal-Ausrüstung",47.333333,13.333333,31.5,34.75,102795
-"SN","Senegal","Waffen & Munition",47.333333,13.333333,14,-14,101720
-"KW","Kuwait","Andere",47.333333,13.333333,29.5,47.75,100336
-"BB","Barbados","Waffen & Munition",47.333333,13.333333,13.166667,-59.533333,99481
-"SV","El Salvador","Waffen & Munition",47.333333,13.333333,13.833333,-88.916667,92909
-"GY","Guyana","Waffen & Munition",47.333333,13.333333,5,-59,89193
-"AR","Argentina","Andere",47.333333,13.333333,-34,-64,88700
-"HU","Hungary","Personal-Ausrüstung",47.333333,13.333333,47,20,86000
-"BT","Bhutan","Waffen & Munition",47.333333,13.333333,27.5,90.5,83508
-"GA","Gabon","Waffen & Munition",47.333333,13.333333,-1,11.75,82306
-"DK","Denmark","Personal-Ausrüstung",47.333333,13.333333,56,10,81256
-"MN","Mongolia","Waffen & Munition",47.333333,13.333333,46,105,72869
-"DO","Dominican Republic","Waffen & Munition",47.333333,13.333333,19,-70.666667,66933
-"LV","Latvia","Personal-Ausrüstung",47.333333,13.333333,57,25,62206
-"NL","Netherlands","Personal-Ausrüstung",47.333333,13.333333,52.5,5.75,58540
-"VC","Saint Vincent & The Grenadines","Waffen & Munition",47.333333,13.333333,13.083333,-61.2,50890
-"LU","Luxembourg","Fahrzeuge & Zubehör",47.333333,13.333333,49.75,6.166667,50696
-"PL","Poland","Personal-Ausrüstung",47.333333,13.333333,52,20,47907
-"SI","Slovenia","Personal-Ausrüstung",47.333333,13.333333,46.25,15.166667,46456
-"AM","Armenia","Waffen & Munition",47.333333,13.333333,40,45,43988
-"VN","Vietnam","Waffen & Munition",47.333333,13.333333,16.166667,107.833333,43552
-"UZ","Uzbekistan","Waffen & Munition",47.333333,13.333333,41.707542,63.84911,43434
-"SE","Sweden","Personal-Ausrüstung",47.333333,13.333333,62,15,40039
-"BN","Brunei Darussalam","Fahrzeuge & Zubehör",47.333333,13.333333,4.5,114.666667,40000
-"OM","Oman","Personal-Ausrüstung",47.333333,13.333333,21,57,39235
-"UG","Uganda","Waffen & Munition",47.333333,13.333333,2,33,36377
-"LI","Liechtenstein","Personal-Ausrüstung",47.333333,13.333333,47.166667,9.533333,35400
-"TH","Thailand","IT",47.333333,13.333333,15,100,33500
-"DM","Dominica","Waffen & Munition",47.333333,13.333333,15.5,-61.333333,32872
-"PE","Peru","Fahrzeuge & Zubehör",47.333333,13.333333,-10,-76,30000
-"KE","Kenya","Personal-Ausrüstung",47.333333,13.333333,1,38,29276
-"FR","France","Fahrzeuge & Zubehör",47.333333,13.333333,46,2,28830
-"PL","Poland","IT",47.333333,13.333333,52,20,25660
-"MO","Macao","Personal-Ausrüstung",47.333333,13.333333,22.157778,113.559722,25500
-"AW","Aruba","Waffen & Munition",47.333333,13.333333,12.5,-69.966667,24914
-"HN","Honduras","Waffen & Munition",47.333333,13.333333,15,-86.5,24399
-"NZ","New Zealand","Personal-Ausrüstung",47.333333,13.333333,-42,174,24380
-"VE","Venezuela","Personal-Ausrüstung",47.333333,13.333333,8,-66,23310
-"TH","Thailand","Andere",47.333333,13.333333,15,100,21852
-"GH","Ghana","Waffen & Munition",47.333333,13.333333,8,-2,18648
-"PG","Papua New Guinea","Waffen & Munition",47.333333,13.333333,-6,147,16044
-"CD","Democratic Republic of Congo","Waffen & Munition",47.333333,13.333333,0,25,15052
-"LK","Sri Lanka","Waffen & Munition",47.333333,13.333333,7,81,14907
-"AR","Argentina","Personal-Ausrüstung",47.333333,13.333333,-34,-64,14341
-"FK","Falklands","Waffen & Munition",47.333333,13.333333,-51.75,-59.166667,14112
-"LT","Lithuania","Personal-Ausrüstung",47.333333,13.333333,56,24,14077
-"CZ","Czech Republic","Personal-Ausrüstung",47.333333,13.333333,49.75,15,14049
-"VA","Vatican","Waffen & Munition",47.333333,13.333333,41.9,12.45,13656
-"CZ","Czech Republic","Andere",47.333333,13.333333,49.75,15,13000
-"CM","Cameroon","Waffen & Munition",47.333333,13.333333,6,12,12533
-"JP","Japan","IT",47.333333,13.333333,36,138,10960
-"PH","Philippines","Personal-Ausrüstung",47.333333,13.333333,13,122,9942
-"GD","Grenada","Waffen & Munition",47.333333,13.333333,12.116667,-61.666667,9852
-"LR","Liberia","Waffen & Munition",47.333333,13.333333,6.5,-9.5,9130
-"HU","Hungary","Andere",47.333333,13.333333,47,20,8775
-"TG","Togo","Waffen & Munition",47.333333,13.333333,8,1.166667,8200
-"CA","Canada","IT",47.333333,13.333333,60,-96,7910
-"PK","Pakistan","Personal-Ausrüstung",47.333333,13.333333,30,70,7902
-"FR","France","Andere",47.333333,13.333333,46,2,7428
-"CG","Congo","Waffen & Munition",47.333333,13.333333,-1,15,6987
-"NO","Norway","IT",47.333333,13.333333,62,10,6040
-"DO","Dominican Republic","Andere",47.333333,13.333333,19,-70.666667,5998
-"PW","Palau","Waffen & Munition",47.333333,13.333333,6,134,5944
-"CY","Cyprus","Waffen & Munition",47.333333,13.333333,35,33,5083
-"TM","Turkmenistan","IT",47.333333,13.333333,40,60,5037
-"SG","Singapore","IT",47.333333,13.333333,1.366667,103.8,4800
-"UZ","Uzbekistan","Personal-Ausrüstung",47.333333,13.333333,41.707542,63.84911,4642
-"BG","Bulgaria","Personal-Ausrüstung",47.333333,13.333333,43,25,4467
-"TL","East Timor","Waffen & Munition",47.333333,13.333333,-8.833333,125.75,4422
-"TR","Turkey","IT",47.333333,13.333333,39.059012,34.911546,4400
-"UY","Uruguay","Personal-Ausrüstung",47.333333,13.333333,-33,-56,4348
-"IL","Israel","Andere",47.333333,13.333333,31.5,34.75,4000
-"TO","Tonga","Waffen & Munition",47.333333,13.333333,-20,-175,3985
-"MC","Monaco","Waffen & Munition",47.333333,13.333333,43.733333,7.4,3871
-"BM","Bermuda","Waffen & Munition",47.333333,13.333333,32.333333,-64.75,3531
-"KH","Cambodia","Waffen & Munition",47.333333,13.333333,13,105,3258
-"LU","Luxembourg","Personal-Ausrüstung",47.333333,13.333333,49.75,6.166667,3172
-"CO","Colombia","Waffen & Munition",47.333333,13.333333,4,-72,3125
-"ML","Mali","Waffen & Munition",47.333333,13.333333,17,-4,2868
-"MV","Maldives","Waffen & Munition",47.333333,13.333333,3.2,73,2681
-"GR","Greece","Fahrzeuge & Zubehör",47.333333,13.333333,39,22,2482
-"SM","San Marino","Waffen & Munition",47.333333,13.333333,43.933333,12.416667,2153
-"EE","Estonia","Waffen & Munition",47.333333,13.333333,59,26,1938
-"TM","Turkmenistan","Waffen & Munition",47.333333,13.333333,40,60,1900
-"HR","Croatia","IT",47.333333,13.333333,45.166667,15.5,1750
-"NE","Niger","Fahrzeuge & Zubehör",47.333333,13.333333,16,8,1620
-"BW","Botswana","Waffen & Munition",47.333333,13.333333,-22,24,1200
-"MR","Mauritania","Waffen & Munition",47.333333,13.333333,20,-12,1094
-"MG","Madagascar","Waffen & Munition",47.333333,13.333333,-20,47,890
-"GB","United Kingdom","IT",47.333333,13.333333,54,-4,838
-"LA","Lao","Waffen & Munition",47.333333,13.333333,18,105,685
-"BE","Belgium","IT",47.333333,13.333333,50.833333,4,500
-"MW","Malawi","Waffen & Munition",47.333333,13.333333,-13.5,34,461
-"GI","Gibraltar","Waffen & Munition",47.333333,13.333333,36.133333,-5.35,149
+"iso_destination_country","iso_destination_country_3","name_destination_country","wkdok","lat_source_country","long_source_country","lat_destination_country","long_destination_country","mlsum"
+"US","USA","Vereinigte Staaten","Waffen & Munition",47.333333,13.333333,39.828175,-98.5795,1913951562
+"DZ","DZA","Algerien","Fahrzeuge & Zubehör",47.333333,13.333333,28,3,294245238
+"GB","GBR","Großbritannien","Waffen & Munition",47.333333,13.333333,54,-4,253866151
+"KW","KWT","Kuwait","Fahrzeuge & Zubehör",47.333333,13.333333,29.5,47.75,188759065
+"CZ","CZE","Tschechische Republik","Fahrzeuge & Zubehör",47.333333,13.333333,49.75,15,185120004
+"AE","ARE","Vereinigte Arabische Emirate","Fahrzeuge & Zubehör",47.333333,13.333333,24,54,168352900
+"AU","AUS","Australien","Fahrzeuge & Zubehör",47.333333,13.333333,-25,135,152475263
+"CH","CHE","Schweiz","Fahrzeuge & Zubehör",47.333333,13.333333,47,8,106852228
+"PT","PRT","Portugal","Fahrzeuge & Zubehör",47.333333,13.333333,39.5,-8,76834785
+"OM","OMN","Oman","Fahrzeuge & Zubehör",47.333333,13.333333,21,57,71103035
+"CH","CHE","Schweiz","Waffen & Munition",47.333333,13.333333,47,8,57677174
+"OM","OMN","Oman","Waffen & Munition",47.333333,13.333333,21,57,56199201
+"DE","DEU","Deutschland","Fahrzeuge & Zubehör",47.333333,13.333333,51.5,10.5,48498211
+"SA","SAU","Saudi Arabien","Waffen & Munition",47.333333,13.333333,25,45,47941868
+"CA","CAN","Kanada","Waffen & Munition",47.333333,13.333333,60,-96,45258789
+"US","USA","Vereinigte Staaten","Personal-Ausrüstung",47.333333,13.333333,39.828175,-98.5795,45117577
+"RU","RUS","Russische Föderation","Waffen & Munition",47.333333,13.333333,60,100,44683770
+"IT","ITA","Italien","Waffen & Munition",47.333333,13.333333,42.833333,12.833333,37811979
+"DE","DEU","Deutschland","Personal-Ausrüstung",47.333333,13.333333,51.5,10.5,27414048
+"US","USA","Vereinigte Staaten","Fahrzeuge & Zubehör",47.333333,13.333333,39.828175,-98.5795,27324760
+"DE","DEU","Deutschland","Andere",47.333333,13.333333,51.5,10.5,27132955
+"SG","SGP","Singapur","Fahrzeuge & Zubehör",47.333333,13.333333,1.366667,103.8,23427723
+"AE","ARE","Vereinigte Arabische Emirate","Waffen & Munition",47.333333,13.333333,24,54,22361840
+"IQ","IRQ","Irak","Waffen & Munition",47.333333,13.333333,33,44,21617366
+"AU","AUS","Australien","Waffen & Munition",47.333333,13.333333,-25,135,20217241
+"TH","THA","Thailand","Waffen & Munition",47.333333,13.333333,15,100,19372179
+"CZ","CZE","Tschechische Republik","Waffen & Munition",47.333333,13.333333,49.75,15,18852578
+"ID","IDN","Indonesien","Waffen & Munition",47.333333,13.333333,-5,120,18559869
+"NL","NLD","Niederlande","Waffen & Munition",47.333333,13.333333,52.5,5.75,17917864
+"DE","DEU","Deutschland","IT",47.333333,13.333333,51.5,10.5,17727433
+"BR","BRA","Brasilien","Andere",47.333333,13.333333,-10,-55,17154839
+"DE","DEU","Deutschland","Waffen & Munition",47.333333,13.333333,51.5,10.5,16565485
+"KW","KWT","Kuwait","Waffen & Munition",47.333333,13.333333,29.5,47.75,14837108
+"ZA","ZAF","Südafrika","Waffen & Munition",47.333333,13.333333,-30,26,14375803
+"SE","SWE","Schweden","Waffen & Munition",47.333333,13.333333,62,15,14326251
+"UY","URY","Uruguay","Waffen & Munition",47.333333,13.333333,-33,-56,13936630
+"MX","MEX","Mexiko","Waffen & Munition",47.333333,13.333333,23,-102,11938541
+"TR","TUR","Türkei","Waffen & Munition",47.333333,13.333333,39.059012,34.911546,11844219
+"UA","UKR","Ukraine","Fahrzeuge & Zubehör",47.333333,13.333333,49,32,11168754
+"IE","IRL","Irland","Waffen & Munition",47.333333,13.333333,53,-8,11116103
+"JO","JOR","Jordanien","Fahrzeuge & Zubehör",47.333333,13.333333,31,36,10365602
+"UA","UKR","Ukraine","Waffen & Munition",47.333333,13.333333,49,32,9737127
+"FR","FRA","Frankreich","Waffen & Munition",47.333333,13.333333,46,2,9707118
+"NO","NOR","Norwegen","Waffen & Munition",47.333333,13.333333,62,10,9696685
+"GB","GBR","Großbritannien","Fahrzeuge & Zubehör",47.333333,13.333333,54,-4,8466468
+"NZ","NZL","Neuseeland","Waffen & Munition",47.333333,13.333333,-42,174,8458087
+"VN","VNM","Vietnam","Fahrzeuge & Zubehör",47.333333,13.333333,16.166667,107.833333,8402000
+"TN","TUN","Tunesien","Waffen & Munition",47.333333,13.333333,34,9,7991212
+"PL","POL","Polen","Waffen & Munition",47.333333,13.333333,52,20,7716734
+"TM","TKM","Turkmenistan","Fahrzeuge & Zubehör",47.333333,13.333333,40,60,7370595
+"IT","ITA","Italien","Personal-Ausrüstung",47.333333,13.333333,42.833333,12.833333,7027030
+"IT","ITA","Italien","Andere",47.333333,13.333333,42.833333,12.833333,7008675
+"DK","DNK","Dänemark","Waffen & Munition",47.333333,13.333333,56,10,6756045
+"BR","BRA","Brasilien","Waffen & Munition",47.333333,13.333333,-10,-55,6660161
+"LT","LTU","Litauen","Waffen & Munition",47.333333,13.333333,56,24,6622146
+"LV","LVA","Lettland","Waffen & Munition",47.333333,13.333333,57,25,6561690
+"SG","SGP","Singapur","Waffen & Munition",47.333333,13.333333,1.366667,103.8,6187628
+"JP","JPN","Japan","Waffen & Munition",47.333333,13.333333,36,138,6058976
+"HR","HRV","Kroatien","Waffen & Munition",47.333333,13.333333,45.166667,15.5,5983218
+"DZ","DZA","Algerien","Waffen & Munition",47.333333,13.333333,28,3,5921160
+"BW","BWA","Botswana","Fahrzeuge & Zubehör",47.333333,13.333333,-22,24,5454828
+"IN","IND","Indien","Waffen & Munition",47.333333,13.333333,20,77,4967853
+"TN","TUN","Tunesien","Andere",47.333333,13.333333,34,9,4792202
+"SA","SAU","Saudi Arabien","Personal-Ausrüstung",47.333333,13.333333,25,45,4759588
+"TH","THA","Thailand","Fahrzeuge & Zubehör",47.333333,13.333333,15,100,4655007
+"MY","MYS","Malaysia","Waffen & Munition",47.333333,13.333333,2.5,112.5,4638513
+"PK","PAK","Pakistan","Fahrzeuge & Zubehör",47.333333,13.333333,30,70,4474494
+"BG","BGR","Bulgarien","Waffen & Munition",47.333333,13.333333,43,25,4431428
+"ES","ESP","Spanien","Waffen & Munition",47.333333,13.333333,40,-4,4345098
+"LU","LUX","Luxemburg","Waffen & Munition",47.333333,13.333333,49.75,6.166667,4254813
+"BA","BIH","Bosnien und Herzegowina","Waffen & Munition",47.333333,13.333333,44.25,17.833333,4240824
+"CH","CHE","Schweiz","Personal-Ausrüstung",47.333333,13.333333,47,8,4019649
+"ES","ESP","Spanien","Fahrzeuge & Zubehör",47.333333,13.333333,40,-4,3994573
+"AR","ARG","Argentinien","Waffen & Munition",47.333333,13.333333,-34,-64,3974549
+"PE","PER","Peru","Waffen & Munition",47.333333,13.333333,-10,-76,3886404
+"NO","NOR","Norwegen","Fahrzeuge & Zubehör",47.333333,13.333333,62,10,3873184
+"JO","JOR","Jordanien","Waffen & Munition",47.333333,13.333333,31,36,3691529
+"ES","ESP","Spanien","Personal-Ausrüstung",47.333333,13.333333,40,-4,3427695
+"TR","TUR","Türkei","Personal-Ausrüstung",47.333333,13.333333,39.059012,34.911546,3337761
+"KZ","KAZ","Kasachstan","Waffen & Munition",47.333333,13.333333,48,68,3319451
+"PA","PAN","Panama","Waffen & Munition",47.333333,13.333333,9,-80,3251388
+"MA","MAR","Marokko","Fahrzeuge & Zubehör",47.333333,13.333333,32,-5,3204402
+"BE","BEL","Belgien","Fahrzeuge & Zubehör",47.333333,13.333333,50.833333,4,3138971
+"IN","IND","Indien","IT",47.333333,13.333333,20,77,3e+06
+"IR","IRN","Iran","Waffen & Munition",47.333333,13.333333,32,53,2924710
+"KW","KWT","Kuwait","IT",47.333333,13.333333,29.5,47.75,2832959
+"CL","CHL","Chile","Waffen & Munition",47.333333,13.333333,-30,-71,2719295
+"CA","CAN","Kanada","Fahrzeuge & Zubehör",47.333333,13.333333,60,-96,2680155
+"SA","SAU","Saudi Arabien","Fahrzeuge & Zubehör",47.333333,13.333333,25,45,2658332
+"IT","ITA","Italien","Fahrzeuge & Zubehör",47.333333,13.333333,42.833333,12.833333,2544920
+"HR","HRV","Kroatien","Fahrzeuge & Zubehör",47.333333,13.333333,45.166667,15.5,2524675
+"CA","CAN","Kanada","Andere",47.333333,13.333333,60,-96,2513305
+"KR","KOR","Korea, Republik von","Waffen & Munition",47.333333,13.333333,37,127.5,2399409
+"BE","BEL","Belgien","Waffen & Munition",47.333333,13.333333,50.833333,4,2378091
+"RO","ROU","Rumänien","Waffen & Munition",47.333333,13.333333,46,25,2351181
+"CH","CHE","Schweiz","Andere",47.333333,13.333333,47,8,2320390
+"KR","KOR","Korea, Republik von","Fahrzeuge & Zubehör",47.333333,13.333333,37,127.5,2293360
+"AR","ARG","Argentinien","Fahrzeuge & Zubehör",47.333333,13.333333,-34,-64,2211706
+"JP","JPN","Japan","Fahrzeuge & Zubehör",47.333333,13.333333,36,138,2164900
+"HU","HUN","Ungarn","Waffen & Munition",47.333333,13.333333,47,20,2149200
+"FI","FIN","Finnland","Waffen & Munition",47.333333,13.333333,64,26,2013390
+"SI","SVN","Slowenien","Andere",47.333333,13.333333,46.25,15.166667,2e+06
+"GB","GBR","Großbritannien","Andere",47.333333,13.333333,54,-4,1963821
+"RS","SRB","Serbien","Waffen & Munition",47.333333,13.333333,44,21,1944370
+"MT","MLT","Malta","Andere",47.333333,13.333333,35.916667,14.433333,1912146
+"ME","MNE","Montenegro","Fahrzeuge & Zubehör",47.333333,13.333333,42.5,19.3,1885200
+"PL","POL","Polen","Fahrzeuge & Zubehör",47.333333,13.333333,52,20,1837612
+"LY","LBY","Libyen","Andere",47.333333,13.333333,25,17,1798840
+"TR","TUR","Türkei","Fahrzeuge & Zubehör",47.333333,13.333333,39.059012,34.911546,1755646
+"FR","FRA","Frankreich","Personal-Ausrüstung",47.333333,13.333333,46,2,1745464
+"MK","MKD","Mazedonien","Waffen & Munition",47.333333,13.333333,41.833333,22,1741480
+"SK","SVK","Slowakei","Waffen & Munition",47.333333,13.333333,48.666667,19.5,1727706
+"JO","JOR","Jordanien","IT",47.333333,13.333333,31,36,1722880
+"AE","ARE","Vereinigte Arabische Emirate","Andere",47.333333,13.333333,24,54,1693789
+"QA","QAT","Katar","Waffen & Munition",47.333333,13.333333,25.5,51.25,1687515
+"AU","AUS","Australien","Personal-Ausrüstung",47.333333,13.333333,-25,135,1629326
+"AF","AFG","Afghanistan","Fahrzeuge & Zubehör",47.333333,13.333333,33,66,1608141
+"US","USA","Vereinigte Staaten","Andere",47.333333,13.333333,39.828175,-98.5795,1601482
+"NP","NPL","Nepal","Waffen & Munition",47.333333,13.333333,28,84,1578414
+"KR","KOR","Korea, Republik von","Andere",47.333333,13.333333,37,127.5,1575259
+"IN","IND","Indien","Personal-Ausrüstung",47.333333,13.333333,20,77,1561900
+"TT","TTO","Trinidad und Tobago","Waffen & Munition",47.333333,13.333333,11,-61,1500747
+"SI","SVN","Slowenien","Waffen & Munition",47.333333,13.333333,46.25,15.166667,1491260
+"SA","SAU","Saudi Arabien","Andere",47.333333,13.333333,25,45,1459051
+"PY","PRY","Paraguay","Waffen & Munition",47.333333,13.333333,-22.993333,-57.996389,1414553
+"HU","HUN","Ungarn","Fahrzeuge & Zubehör",47.333333,13.333333,47,20,1406579
+"TZ","TZA","Tansania","Waffen & Munition",47.333333,13.333333,-6,35,1380691
+"PH","PHL","Philippinen","Waffen & Munition",47.333333,13.333333,13,122,1359400
+"BN","BRN","Brunei Darussalam","Waffen & Munition",47.333333,13.333333,4.5,114.666667,1329993
+"VE","VEN","Venezuela","Fahrzeuge & Zubehör",47.333333,13.333333,8,-66,1210579
+"ID","IDN","Indonesien","Fahrzeuge & Zubehör",47.333333,13.333333,-5,120,1205294
+"MY","MYS","Malaysia","Fahrzeuge & Zubehör",47.333333,13.333333,2.5,112.5,1179400
+"BR","BRA","Brasilien","Personal-Ausrüstung",47.333333,13.333333,-10,-55,1170776
+"NE","NER","Niger","Andere",47.333333,13.333333,16,8,1100000
+"BR","BRA","Brasilien","Fahrzeuge & Zubehör",47.333333,13.333333,-10,-55,1098372
+"BE","BEL","Belgien","Personal-Ausrüstung",47.333333,13.333333,50.833333,4,1084255
+"KR","KOR","Korea, Republik von","Personal-Ausrüstung",47.333333,13.333333,37,127.5,1036487
+"ME","MNE","Montenegro","Waffen & Munition",47.333333,13.333333,42.5,19.3,994250
+"NZ","NZL","Neuseeland","Andere",47.333333,13.333333,-42,174,990000
+"KE","KEN","Kenia","Waffen & Munition",47.333333,13.333333,1,38,980013
+"BG","BGR","Bulgarien","Fahrzeuge & Zubehör",47.333333,13.333333,43,25,960000
+"LB","LBN","Libanon","Waffen & Munition",47.333333,13.333333,33.833333,35.833333,933699
+"BH","BHR","Bahrain","Waffen & Munition",47.333333,13.333333,26,50.5,885203
+"OM","OMN","Oman","IT",47.333333,13.333333,21,57,882482
+"AE","ARE","Vereinigte Arabische Emirate","Personal-Ausrüstung",47.333333,13.333333,24,54,880391
+"BJ","BEN","Benin","Waffen & Munition",47.333333,13.333333,9.5,2.25,879648
+"JO","JOR","Jordanien","Andere",47.333333,13.333333,31,36,872760
+"QA","QAT","Katar","Fahrzeuge & Zubehör",47.333333,13.333333,25.5,51.25,830349
+"MU","MUS","Mauritius","Waffen & Munition",47.333333,13.333333,-20.3,57.583333,807915
+"ZA","ZAF","Südafrika","Personal-Ausrüstung",47.333333,13.333333,-30,26,807158
+"TW","TWN","Taiwan","Fahrzeuge & Zubehör",47.333333,13.333333,24,121,798000
+"GA","GAB","Gabun","Fahrzeuge & Zubehör",47.333333,13.333333,-1,11.75,768806
+"NA","NAM","Namibia","Waffen & Munition",47.333333,13.333333,NA,NA,738120
+"EG","EGY","Ägypten","Waffen & Munition",47.333333,13.333333,27,30,735255
+"US","USA","Vereinigte Staaten","IT",47.333333,13.333333,39.828175,-98.5795,722636
+"TW","TWN","Taiwan","Personal-Ausrüstung",47.333333,13.333333,24,121,713338
+"CL","CHL","Chile","Fahrzeuge & Zubehör",47.333333,13.333333,-30,-71,712220
+"PK","PAK","Pakistan","Waffen & Munition",47.333333,13.333333,30,70,700051
+"CN","CHN","China","Fahrzeuge & Zubehör",47.333333,13.333333,35,105,7e+05
+"MD","MDA","Republik Moldau","Waffen & Munition",47.333333,13.333333,47,29,699579
+"EC","ECU","Ecuador","Waffen & Munition",47.333333,13.333333,-2,-77.5,687500
+"HR","HRV","Kroatien","Personal-Ausrüstung",47.333333,13.333333,45.166667,15.5,683572
+"AF","AFG","Afghanistan","Waffen & Munition",47.333333,13.333333,33,66,670143
+"JP","JPN","Japan","Personal-Ausrüstung",47.333333,13.333333,36,138,638594
+"AZ","AZE","Aserbaidschan","Waffen & Munition",47.333333,13.333333,40.5,47.5,632454
+"NC","NCL","Neu-Kaledonien","Waffen & Munition",47.333333,13.333333,-21.5,165.5,619289
+"CL","CHL","Chile","Personal-Ausrüstung",47.333333,13.333333,-30,-71,618173
+"TN","TUN","Tunesien","Fahrzeuge & Zubehör",47.333333,13.333333,34,9,609767
+"CO","COL","Kolumbien","Personal-Ausrüstung",47.333333,13.333333,4,-72,580491
+"TN","TUN","Tunesien","Personal-Ausrüstung",47.333333,13.333333,34,9,572674
+"MO","MAC","Macao","Waffen & Munition",47.333333,13.333333,22.157778,113.559722,566707
+"ZM","ZMB","Sambia","Waffen & Munition",47.333333,13.333333,-15,30,564583
+"JM","JAM","Jamaika","Waffen & Munition",47.333333,13.333333,18.25,-77.5,554653
+"MO","MAC","Macao","Fahrzeuge & Zubehör",47.333333,13.333333,22.157778,113.559722,551985
+"XK","KOS","Kosovo","Waffen & Munition",47.333333,13.333333,42.583333,21,548441
+"TW","TWN","Taiwan","Waffen & Munition",47.333333,13.333333,24,121,545603
+"PT","PRT","Portugal","Waffen & Munition",47.333333,13.333333,39.5,-8,542414
+"NG","NGA","Nigeria","Fahrzeuge & Zubehör",47.333333,13.333333,10,8,532639
+"IT","ITA","Italien","IT",47.333333,13.333333,42.833333,12.833333,506640
+"UA","UKR","Ukraine","Personal-Ausrüstung",47.333333,13.333333,49,32,503098
+"DZ","DZA","Algerien","Personal-Ausrüstung",47.333333,13.333333,28,3,498106
+"KG","KGZ","Kirgisistan","Waffen & Munition",47.333333,13.333333,41,75,494265
+"GB","GBR","Großbritannien","Personal-Ausrüstung",47.333333,13.333333,54,-4,493330
+"LI","LIE","Liechtenstein","Waffen & Munition",47.333333,13.333333,47.166667,9.533333,468450
+"SG","SGP","Singapur","Personal-Ausrüstung",47.333333,13.333333,1.366667,103.8,465792
+"GT","GTM","Guatemala","Waffen & Munition",47.333333,13.333333,15.5,-90.25,463133
+"BD","BGD","Bangladesch","Waffen & Munition",47.333333,13.333333,24,90,461041
+"CN","CHN","China","IT",47.333333,13.333333,35,105,456304
+"VN","VNM","Vietnam","Personal-Ausrüstung",47.333333,13.333333,16.166667,107.833333,446166
+"CO","COL","Kolumbien","Fahrzeuge & Zubehör",47.333333,13.333333,4,-72,436150
+"IL","ISR","Israel","Fahrzeuge & Zubehör",47.333333,13.333333,31.5,34.75,435600
+"ZA","ZAF","Südafrika","Fahrzeuge & Zubehör",47.333333,13.333333,-30,26,434107
+"NZ","NZL","Neuseeland","Fahrzeuge & Zubehör",47.333333,13.333333,-42,174,428536
+"RO","ROU","Rumänien","Personal-Ausrüstung",47.333333,13.333333,46,25,396008
+"IN","IND","Indien","Fahrzeuge & Zubehör",47.333333,13.333333,20,77,392500
+"MY","MYS","Malaysia","Personal-Ausrüstung",47.333333,13.333333,2.5,112.5,389768
+"EG","EGY","Ägypten","Personal-Ausrüstung",47.333333,13.333333,27,30,389402
+"EC","ECU","Ecuador","Personal-Ausrüstung",47.333333,13.333333,-2,-77.5,388044
+"NI","NIC","Nicaragua","Waffen & Munition",47.333333,13.333333,13,-85,382284
+"GE","GEO","Georgien","Waffen & Munition",47.333333,13.333333,41.999981,43.499905,379916
+"ID","IDN","Indonesien","Andere",47.333333,13.333333,-5,120,364616
+"BO","BOL","Bolivien","Waffen & Munition",47.333333,13.333333,-17,-65,358892
+"IL","ISR","Israel","IT",47.333333,13.333333,31.5,34.75,355200
+"GR","GRC","Griechenland","Waffen & Munition",47.333333,13.333333,39,22,353118
+"TH","THA","Thailand","Personal-Ausrüstung",47.333333,13.333333,15,100,341599
+"CR","CRI","Costa Rica","Waffen & Munition",47.333333,13.333333,10,-84,331546
+"NO","NOR","Norwegen","Personal-Ausrüstung",47.333333,13.333333,62,10,312039
+"RU","RUS","Russische Föderation","Personal-Ausrüstung",47.333333,13.333333,60,100,298120
+"TJ","TJK","Tadschikistan","Waffen & Munition",47.333333,13.333333,39,71,296553
+"IL","ISR","Israel","Waffen & Munition",47.333333,13.333333,31.5,34.75,283782
+"CH","CHE","Schweiz","IT",47.333333,13.333333,47,8,275800
+"TM","TKM","Turkmenistan","Andere",47.333333,13.333333,40,60,275289
+"CW","CUW","Curacao","Waffen & Munition",47.333333,13.333333,12.166667,-69,274588
+"AL","ALB","Albanien","Waffen & Munition",47.333333,13.333333,41,20,274110
+"DK","DNK","Dänemark","Andere",47.333333,13.333333,56,10,274079
+"EG","EGY","Ägypten","Fahrzeuge & Zubehör",47.333333,13.333333,27,30,266600
+"RS","SRB","Serbien","Personal-Ausrüstung",47.333333,13.333333,44,21,235042
+"YE","YEM","Jemen","Waffen & Munition",47.333333,13.333333,15.5,47.5,231092
+"SR","SUR","Surinam","Waffen & Munition",47.333333,13.333333,4,-56,221558
+"CA","CAN","Kanada","Personal-Ausrüstung",47.333333,13.333333,60,-96,221021
+"MA","MAR","Marokko","Waffen & Munition",47.333333,13.333333,32,-5,215143
+"HK","HKG","Hongkong","Waffen & Munition",47.333333,13.333333,22.25,114.166667,205924
+"LY","LBY","Libyen","Waffen & Munition",47.333333,13.333333,25,17,188476
+"VE","VEN","Venezuela","Waffen & Munition",47.333333,13.333333,8,-66,177849
+"SK","SVK","Slowakei","Personal-Ausrüstung",47.333333,13.333333,48.666667,19.5,169754
+"AD","AND","Andorra","Waffen & Munition",47.333333,13.333333,42.5,1.5,161683
+"CN","CHN","China","Personal-Ausrüstung",47.333333,13.333333,35,105,159317
+"HT","HTI","Haiti","Waffen & Munition",47.333333,13.333333,19,-72.416667,158208
+"NP","NPL","Nepal","Personal-Ausrüstung",47.333333,13.333333,28,84,156384
+"SI","SVN","Slowenien","IT",47.333333,13.333333,46.25,15.166667,145552
+"BA","BIH","Bosnien und Herzegowina","Personal-Ausrüstung",47.333333,13.333333,44.25,17.833333,139761
+"BY","BLR","Weißrussland","Waffen & Munition",47.333333,13.333333,53,28,139051
+"FR","FRA","Frankreich","IT",47.333333,13.333333,46,2,133984
+"CZ","CZE","Tschechische Republik","IT",47.333333,13.333333,49.75,15,128600
+"MT","MLT","Malta","Waffen & Munition",47.333333,13.333333,35.916667,14.433333,125735
+"IS","ISL","Island","Waffen & Munition",47.333333,13.333333,65,-18,124347
+"GA","GAB","Gabun","Personal-Ausrüstung",47.333333,13.333333,-1,11.75,124267
+"PE","PER","Peru","Personal-Ausrüstung",47.333333,13.333333,-10,-76,118299
+"ID","IDN","Indonesien","Personal-Ausrüstung",47.333333,13.333333,-5,120,116135
+"TZ","TZA","Tansania","Personal-Ausrüstung",47.333333,13.333333,-6,35,115561
+"SK","SVK","Slowakei","Fahrzeuge & Zubehör",47.333333,13.333333,48.666667,19.5,112000
+"GL","GRL","Grönland","Waffen & Munition",47.333333,13.333333,72,-40,111752
+"SE","SWE","Schweden","Fahrzeuge & Zubehör",47.333333,13.333333,62,15,111135
+"MX","MEX","Mexiko","Personal-Ausrüstung",47.333333,13.333333,23,-102,108962
+"LC","LCA","Saint Lucia","Waffen & Munition",47.333333,13.333333,13.883333,-60.966667,108034
+"FI","FIN","Finnland","Personal-Ausrüstung",47.333333,13.333333,64,26,105516
+"BZ","BLZ","Belize","Waffen & Munition",47.333333,13.333333,17.25,-88.75,105088
+"CI","CIV","Elfenbeinküste","Waffen & Munition",47.333333,13.333333,8,-5,104640
+"FI","FIN","Finnland","Fahrzeuge & Zubehör",47.333333,13.333333,64,26,103800
+"MX","MEX","Mexiko","Fahrzeuge & Zubehör",47.333333,13.333333,23,-102,103700
+"IL","ISR","Israel","Personal-Ausrüstung",47.333333,13.333333,31.5,34.75,102795
+"SN","SEN","Senegal","Waffen & Munition",47.333333,13.333333,14,-14,101720
+"KW","KWT","Kuwait","Andere",47.333333,13.333333,29.5,47.75,100336
+"BB","BRB","Barbados","Waffen & Munition",47.333333,13.333333,13.166667,-59.533333,99481
+"SV","SLV","El Salvador","Waffen & Munition",47.333333,13.333333,13.833333,-88.916667,92909
+"GY","GUY","Guyana","Waffen & Munition",47.333333,13.333333,5,-59,89193
+"AR","ARG","Argentinien","Andere",47.333333,13.333333,-34,-64,88700
+"HU","HUN","Ungarn","Personal-Ausrüstung",47.333333,13.333333,47,20,86000
+"BT","BTN","Bhutan","Waffen & Munition",47.333333,13.333333,27.5,90.5,83508
+"GA","GAB","Gabun","Waffen & Munition",47.333333,13.333333,-1,11.75,82306
+"DK","DNK","Dänemark","Personal-Ausrüstung",47.333333,13.333333,56,10,81256
+"MN","MNG","Mongolei","Waffen & Munition",47.333333,13.333333,46,105,72869
+"DO","DOM","Dominikanische Republik","Waffen & Munition",47.333333,13.333333,19,-70.666667,66933
+"LV","LVA","Lettland","Personal-Ausrüstung",47.333333,13.333333,57,25,62206
+"NL","NLD","Niederlande","Personal-Ausrüstung",47.333333,13.333333,52.5,5.75,58540
+"VC","VCT","St. Vincent und die Grenadinen","Waffen & Munition",47.333333,13.333333,13.083333,-61.2,50890
+"LU","LUX","Luxemburg","Fahrzeuge & Zubehör",47.333333,13.333333,49.75,6.166667,50696
+"PL","POL","Polen","Personal-Ausrüstung",47.333333,13.333333,52,20,47907
+"SI","SVN","Slowenien","Personal-Ausrüstung",47.333333,13.333333,46.25,15.166667,46456
+"AM","ARM","Armenien","Waffen & Munition",47.333333,13.333333,40,45,43988
+"VN","VNM","Vietnam","Waffen & Munition",47.333333,13.333333,16.166667,107.833333,43552
+"UZ","UZB","Usbekistan","Waffen & Munition",47.333333,13.333333,41.707542,63.84911,43434
+"SE","SWE","Schweden","Personal-Ausrüstung",47.333333,13.333333,62,15,40039
+"BN","BRN","Brunei Darussalam","Fahrzeuge & Zubehör",47.333333,13.333333,4.5,114.666667,40000
+"OM","OMN","Oman","Personal-Ausrüstung",47.333333,13.333333,21,57,39235
+"UG","UGA","Uganda","Waffen & Munition",47.333333,13.333333,2,33,36377
+"LI","LIE","Liechtenstein","Personal-Ausrüstung",47.333333,13.333333,47.166667,9.533333,35400
+"TH","THA","Thailand","IT",47.333333,13.333333,15,100,33500
+"DM","DMA","Dominica","Waffen & Munition",47.333333,13.333333,15.5,-61.333333,32872
+"PE","PER","Peru","Fahrzeuge & Zubehör",47.333333,13.333333,-10,-76,30000
+"KE","KEN","Kenia","Personal-Ausrüstung",47.333333,13.333333,1,38,29276
+"FR","FRA","Frankreich","Fahrzeuge & Zubehör",47.333333,13.333333,46,2,28830
+"PL","POL","Polen","IT",47.333333,13.333333,52,20,25660
+"MO","MAC","Macao","Personal-Ausrüstung",47.333333,13.333333,22.157778,113.559722,25500
+"AW","ABW","Aruba","Waffen & Munition",47.333333,13.333333,12.5,-69.966667,24914
+"HN","HND","Honduras","Waffen & Munition",47.333333,13.333333,15,-86.5,24399
+"NZ","NZL","Neuseeland","Personal-Ausrüstung",47.333333,13.333333,-42,174,24380
+"VE","VEN","Venezuela","Personal-Ausrüstung",47.333333,13.333333,8,-66,23310
+"TH","THA","Thailand","Andere",47.333333,13.333333,15,100,21852
+"GH","GHA","Ghana","Waffen & Munition",47.333333,13.333333,8,-2,18648
+"PG","PNG","Papua-Neuguinea","Waffen & Munition",47.333333,13.333333,-6,147,16044
+"CD","COD","Demokratische Republik Kongo","Waffen & Munition",47.333333,13.333333,0,25,15052
+"LK","LKA","Sri Lanka","Waffen & Munition",47.333333,13.333333,7,81,14907
+"AR","ARG","Argentinien","Personal-Ausrüstung",47.333333,13.333333,-34,-64,14341
+"FK","FLK","Falklandinseln (Malvinas)","Waffen & Munition",47.333333,13.333333,-51.75,-59.166667,14112
+"LT","LTU","Litauen","Personal-Ausrüstung",47.333333,13.333333,56,24,14077
+"CZ","CZE","Tschechische Republik","Personal-Ausrüstung",47.333333,13.333333,49.75,15,14049
+"VA","VAT","Vatikanstaat","Waffen & Munition",47.333333,13.333333,41.9,12.45,13656
+"CZ","CZE","Tschechische Republik","Andere",47.333333,13.333333,49.75,15,13000
+"CM","CMR","Kamerun","Waffen & Munition",47.333333,13.333333,6,12,12533
+"JP","JPN","Japan","IT",47.333333,13.333333,36,138,10960
+"PH","PHL","Philippinen","Personal-Ausrüstung",47.333333,13.333333,13,122,9942
+"GD","GRD","Grenada","Waffen & Munition",47.333333,13.333333,12.116667,-61.666667,9852
+"LR","LBR","Liberia","Waffen & Munition",47.333333,13.333333,6.5,-9.5,9130
+"HU","HUN","Ungarn","Andere",47.333333,13.333333,47,20,8775
+"TG","TGO","Togo","Waffen & Munition",47.333333,13.333333,8,1.166667,8200
+"CA","CAN","Kanada","IT",47.333333,13.333333,60,-96,7910
+"PK","PAK","Pakistan","Personal-Ausrüstung",47.333333,13.333333,30,70,7902
+"FR","FRA","Frankreich","Andere",47.333333,13.333333,46,2,7428
+"CG","COG","Kongo","Waffen & Munition",47.333333,13.333333,-1,15,6987
+"NO","NOR","Norwegen","IT",47.333333,13.333333,62,10,6040
+"DO","DOM","Dominikanische Republik","Andere",47.333333,13.333333,19,-70.666667,5998
+"PW","PLW","Palau","Waffen & Munition",47.333333,13.333333,6,134,5944
+"CY","CYP","Zypern","Waffen & Munition",47.333333,13.333333,35,33,5083
+"TM","TKM","Turkmenistan","IT",47.333333,13.333333,40,60,5037
+"SG","SGP","Singapur","IT",47.333333,13.333333,1.366667,103.8,4800
+"UZ","UZB","Usbekistan","Personal-Ausrüstung",47.333333,13.333333,41.707542,63.84911,4642
+"BG","BGR","Bulgarien","Personal-Ausrüstung",47.333333,13.333333,43,25,4467
+"TL","TLS","Timor-Leste","Waffen & Munition",47.333333,13.333333,-8.833333,125.75,4422
+"TR","TUR","Türkei","IT",47.333333,13.333333,39.059012,34.911546,4400
+"UY","URY","Uruguay","Personal-Ausrüstung",47.333333,13.333333,-33,-56,4348
+"IL","ISR","Israel","Andere",47.333333,13.333333,31.5,34.75,4000
+"TO","TON","Tonga","Waffen & Munition",47.333333,13.333333,-20,-175,3985
+"MC","MCO","Monaco","Waffen & Munition",47.333333,13.333333,43.733333,7.4,3871
+"BM","BMU","Bermuda","Waffen & Munition",47.333333,13.333333,32.333333,-64.75,3531
+"KH","KHM","Kambodscha","Waffen & Munition",47.333333,13.333333,13,105,3258
+"LU","LUX","Luxemburg","Personal-Ausrüstung",47.333333,13.333333,49.75,6.166667,3172
+"CO","COL","Kolumbien","Waffen & Munition",47.333333,13.333333,4,-72,3125
+"ML","MLI","Mali","Waffen & Munition",47.333333,13.333333,17,-4,2868
+"MV","MDV","Malediven","Waffen & Munition",47.333333,13.333333,3.2,73,2681
+"GR","GRC","Griechenland","Fahrzeuge & Zubehör",47.333333,13.333333,39,22,2482
+"SM","SMR","San Marino","Waffen & Munition",47.333333,13.333333,43.933333,12.416667,2153
+"EE","EST","Estland","Waffen & Munition",47.333333,13.333333,59,26,1938
+"TM","TKM","Turkmenistan","Waffen & Munition",47.333333,13.333333,40,60,1900
+"HR","HRV","Kroatien","IT",47.333333,13.333333,45.166667,15.5,1750
+"NE","NER","Niger","Fahrzeuge & Zubehör",47.333333,13.333333,16,8,1620
+"BW","BWA","Botswana","Waffen & Munition",47.333333,13.333333,-22,24,1200
+"MR","MRT","Mauretanien","Waffen & Munition",47.333333,13.333333,20,-12,1094
+"MG","MDG","Madagaskar","Waffen & Munition",47.333333,13.333333,-20,47,890
+"GB","GBR","Großbritannien","IT",47.333333,13.333333,54,-4,838
+"LA","LAO","Demokratische Volksrepublik Laos","Waffen & Munition",47.333333,13.333333,18,105,685
+"BE","BEL","Belgien","IT",47.333333,13.333333,50.833333,4,500
+"MW","MWI","Malawi","Waffen & Munition",47.333333,13.333333,-13.5,34,461
+"GI","GIB","Gibraltar","Waffen & Munition",47.333333,13.333333,36.133333,-5.35,149

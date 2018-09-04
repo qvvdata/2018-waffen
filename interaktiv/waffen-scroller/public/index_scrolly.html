@@ -14,10 +14,19 @@
 body {
   margin-top: 80px;
 }
+
+#fakeheader {
+  height: 110px;
+}
+@media(max-width: 520px) {
+  #fakeheader {
+    height: 60px;
+  }
+}
     </style>
   </head>
   <body>
-    <div style="position: fixed; top: 0; width: 100%; height: 110px; background: red; z-index: 55;"></div>
+    <div id="fakeheader" style="position: fixed; top: 0; width: 100%; background: red; z-index: 55;"></div>
     <noscript>
       <strong>We're sorry but waffen-scroller doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>

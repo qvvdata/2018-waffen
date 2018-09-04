@@ -14,11 +14,13 @@ const locale = format.formatDefaultLocale({
   currency: ["", "\u00a0€"]
 });
 Vue.prototype.$fmt = locale.format;
-console.log();
 
 Vue.config.productionTip = false;
-if(document.currentScript) {
-  Vue.prototype.$base_url = document.currentScript.src.split('/').slice(0,-2).join('/');
+if (document.currentScript) {
+  Vue.prototype.$base_url = document.currentScript.src
+    .split("/")
+    .slice(0, -2)
+    .join("/");
 }
 
 Array.prototype.map.call(document.querySelectorAll(".qvv_embed_scrolly"), e => {

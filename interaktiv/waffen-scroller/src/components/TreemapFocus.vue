@@ -94,7 +94,7 @@ export default {
   max-width: 33%
   max-height: 33%
 
-.TreemapFocus.zoomed:hover
+.TreemapFocus.zoomed.auswahl:hover
   transition: opacity 1s
   opacity: 0.2
 

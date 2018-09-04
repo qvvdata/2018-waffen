@@ -1,24 +1,24 @@
 ﻿[waffenmunition]
 graph: init
 zoom_to: Waffen & Munition
-text: <p>Der wichtigste Sektor ist das Herstellen von Waffen und Munition. Waren im Wert von 2,9 Milliarden Euro sind außer Landes gegangen.</p>
+text: <p>Den höchsten Umsatz erzielen österreichische Unternehmen durch das Herstellen von Waffen und Munition. Waren im Wert von 2,9 Milliarden Euro sind seit 2004 außer Landes gegangen.</p>
 :end
 
 
 graph: map1
 text: <p>In Österreich stellen 16 Unternehmen Waffen und Munition her. Je größer der Kreis, desto mehr Mitarbeiter beschäftigt der Hersteller.</p>
-<p>Die bedeutendsten Akteure sind Glock (mit Hauptsitz in Kärnten), Steyr-Mannlicher an der Grenze zwischen Ober- und Niederösterreich sowie Hirtenberger in Niederösterreich. Sie beschäftigen gemeinsam X Mitarbeiter und hatten im Jahr Z einen Umsatz von Y.</p>
+<p>Die bedeutendsten Akteure sind Glock (mit Hauptsitz in Kärnten), Steyr-Mannlicher an der Grenze zwischen Ober- und Niederösterreich sowie Hirtenberger Defence in Niederösterreich. Sie beschäftigen nach Firmenbuch-Angaben gemeinsam etwa 1.800 Mitarbeiter.</p>
 :end
 
 
 graph: map2
-text: <p>Österreich hat zwischen 2004 und 2016 in insgesamt 161 Länder Waffen und Munition geliefert. Am häufigsten exportierten heimische Unternehmen in die USA. Zwei Drittel des Exportvolumens – insgesamt 1,9 Milliarden Euro – gingen in die Vereinigten Staaten.</p>
+text: <p>Österreich hat zwischen 2004 und 2016 in insgesamt 161 Länder Waffen und Munition geliefert. Am meisten exportierten heimische Unternehmen in die USA. Zwei Drittel aller Ausfuhren von Waffen – also 1,9 Mrd. Euro – gingen dorthin.</p>
 :end
 
 
 graph: map3
 text: <p>In Europa sind Großbritannien (254 Millionen Euro) und danach mit größerem Abstand die Schweiz (57 Millionen Euro) die wichtigsten Abnehmer.
-Darauf folgen im Nahen Osten der Oman (56 Millionen Euro) und Saudi-Arabien (48 Millionen Euro).</p>
+Darauf folgen im arabischen Raum der Oman (56 Millionen Euro) und Saudi-Arabien (48 Millionen Euro).</p>
 :end
 
 
@@ -28,26 +28,33 @@ ________________
 [fahrzeuge]
 graph: map2
 zoom_to: Fahrzeuge & Zubehör
-text: <p>Österreich hat zwischen 2004 und 2016 in insgesamt 161 Länder Fahrzeuge und Zubehör geliefert. Mit sechs Ländern überstieg das Volumen mehr als 100 Millionen Euro.</p>
+text: <p>Österreich hat zwischen 2004 und 2016 an insgesamt 161 Länder Fahrzeuge und Zubehör geliefert. Mit sechs Ländern überstieg das Volumen 100 Millionen Euro.</p>
+:end
+
+
+graph: map2
+text: <p>Der beste internationale Kunde österreichischer Fahrzeuge ist Algerien. Dorthin gingen Güter im Wert von 294 Millionen Euro. 
+Dahinter folgen Kuwait (189 Millionen Euro) und Tschechien (185 Millionen Euro).</p> 
 :end
 
 
 graph: map3
-text: <p>Der beste internationale Kunde österreichischer Fahrzeuge ist Algerien. Sie kauften Produkte im Wert von 294 Millionen Euro - ein Fünftel des gesamten Handelsvolumens. 
-Dahinter folgen der Golfstaat Kuwait (189 Millionen Euro) und Tschechien (185 Millionen Euro).Die Vereinigten Arabischen Emirate haben um 168 Millionen Euro eingekauft und Australien um 152 Millionen Euro. Wie bei Waffen und Munition auch sind Schweizer (107 Millionen Euro) bei Österreichs Fahrzeugindustrie fündig geworden. 
-Wie aus den EU-Zahlen hervorgeht ist der Mittlere Osten (442 Millionen Euro) ein wichtigerer Kunde als europäische Länder (333 Millionen Euro). Nordafrika ist mit einem Volumen von 298 Millionen Euro die drittwichtigste Exportregion.</p>
+text: <p>Die Vereinigten Arabischen Emirate haben um 168 Millionen Euro militärische Fahrzeuge in Österreich eingekauft, Australien um 152 Millionen. Dahinter folgt die Schweiz (107 Millionen).</p>
+:end
+
+
+graph: map3
+text: <p>Die Exportberichte zeigen: der arabische Markt ist für Österreichs Militärfahrzeug-Bauer wichtiger als der europäische. Das Exportvolumen in dieser Region übersteigt mit 442 Millionen Euro das innereuropäische um 109 Millionen. Nordafrika ist mit einem Umsatz von 298 Millionen Euro die drittwichtigste Exportregion.</p>
 :end
 ________________
 [personalausruestung]
 graph: map2
 zoom_to: Personal-Ausrüstung
-text: <p>Der beste internationale Kunde österreichischer Truppenausrüstung ist wie bei Waffen und Munition die USA. Güter im Wert von 45 Millionen Euro gingen nach Übersee – das sind 38 Prozent des gesamten Exportvolumens. 
-Selbst alle europäischen Staaten zusammen haben nicht in diesem Ausmaß in Österreich eingekauft: Das Handelsvolumen innereuropäisch belief sich auf 42 Millionen Euro. 
-Anders als bei Fahrzeugen ist der Mittlere Osten (6 Millionen Euro) als Abnehmer hier nicht so dominant.</p>
+text: <p>Die größte Nachfrage nach österreichischer Truppenausrüstung besteht in den USA. Güter im Wert von 45 Millionen Euro gingen über den Atlantik – das sind 38 Prozent des gesamten Exportvolumens dieses Sektors. 
+Selbst alle europäischen Staaten zusammen haben nicht in diesem Ausmaß in Österreich eingekauft: Das innereuropäische Handelsvolumen belief sich auf 42 Millionen Euro. </p>
 :end
 
 
 graph: map3
-text: <p>In Europa sind Großbritannien (254 Millionen Euro) und danach mit größerem Abstand die Schweiz (57 Millionen Euro) die wichtigsten Abnehmer.
-Darauf folgen im Nahen Osten der Oman (56 Millionen Euro) und Saudi-Arabien (48 Millionen Euro).</p>
+text: <p>In Europa sind Deutschland (27,4 Mio. Euro) und danach mit größerem Abstand Italien (7 Mio. Euro) die wichtigsten Abnehmer. Anders als bei Fahrzeugen ist der arabische Raum (6 Millionen Euro) als Abnehmer hier nicht so dominant.</p>
 :end

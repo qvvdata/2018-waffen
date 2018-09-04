@@ -27,7 +27,7 @@ var v1 = new c({
     zoom_to: "Waffen & Munition"
   }
 });
-v1.$mount("#app1");
+v1.$mount("#graph div");
 
 window.pymChild.sendHeight();
 
