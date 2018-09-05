@@ -496,7 +496,7 @@ export default {
     var map = L.map(parent, {
       zoomSnap: 0.25,
       zoomDelta: 1,
-      zoomControl: false,
+      zoomControl: this.auswahl,
       zoom: this.auswahl,
       pan: this.auswahl,
       gestureHandling: this.auswahl,
@@ -508,6 +508,9 @@ export default {
         }
       }
     });
+    if(this.auswahl) {
+      map.zoomControl.setPosition('topright');
+    }
     map.attributionControl.setPrefix(false);
     map.getRenderer(map).options.padding = 2;
     if (!this.auswahl) {
