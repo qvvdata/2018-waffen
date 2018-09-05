@@ -22,6 +22,7 @@ import L from "leaflet";
 import * as scale from "d3-scale";
 import "leaflet-swoopy";
 import "leaflet-responsive-popup";
+import { GestureHandling } from "leaflet-gesture-handling";
 require("../BoundaryCanvas.js");
 import TreemapFocus from "../components/TreemapFocus.vue";
 import world from "../data/ne_world_full_selectattr_topo.json";
@@ -30,6 +31,8 @@ import austria_exports from "../data/exports_countries.csv";
 import austria_companies from "../data/companies_geocoded.csv";
 import scaleCluster from "d3-scale-cluster";
 import * as d3 from "d3";
+
+L.Map.addInitHook("addHandler", "gestureHandling", GestureHandling);
 
 austria_companies.sort(
   (a, b) =>
@@ -492,15 +495,26 @@ export default {
 
     var map = L.map(parent, {
       zoomSnap: 0.25,
-      zoom: false,
-      pan: false,
-      zoomControl: false
+      zoomDelta: 1,
+      zoomControl: false,
+      zoom: this.auswahl,
+      pan: this.auswahl,
+      gestureHandling: this.auswahl,
+      gestureHandlingOptions: {
+        text: {
+          touch: "Verwenden Sie zwei Finger, um die Karte zu zoomen.",
+          scroll: "Verwenden Sie Ctrl + Scrollen, um die Karte zu zoomen.",
+          scrollMac: "Verwenden Sie \u2318 + Scrollen, um die Karte zu zoomen."
+        }
+      }
     });
     map.attributionControl.setPrefix(false);
     map.getRenderer(map).options.padding = 2;
-    map._handlers.forEach(function(handler) {
-      handler.disable();
-    });
+    if (!this.auswahl) {
+      map._handlers.forEach(function(handler) {
+        handler.disable();
+      });
+    }
 
     this.map = map;
 
@@ -518,6 +532,7 @@ export default {
 <style>
 @import "~leaflet/dist/leaflet.css";
 @import "~leaflet-responsive-popup/leaflet.responsive.popup.css";
+@import "~leaflet-gesture-handling/dist/leaflet-gesture-handling.css";
 
 .WaffenViz {
   position: relative;
