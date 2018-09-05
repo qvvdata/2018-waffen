@@ -12,6 +12,7 @@
       :style="state != 'init' && state != 'map1' && auswahl ? 'opacity: 0.5' : ''"
       :auswahl="auswahl"
       :colorscale="colorscale"
+      :groformat="groformat"
       />
   </div>
 </template>
@@ -31,6 +32,7 @@ import austria_exports from "../data/exports_countries.csv";
 import austria_companies from "../data/companies_geocoded.csv";
 import scaleCluster from "d3-scale-cluster";
 import * as d3 from "d3";
+import exports_sumat from "../data/exports_sumat.csv";
 
 L.Map.addInitHook("addHandler", "gestureHandling", GestureHandling);
 
@@ -38,6 +40,10 @@ austria_companies.sort(
   (a, b) =>
     (parseInt(b.beschaeftigte, 10) || 0) - (parseInt(a.beschaeftigte, 10) || 0)
 );
+
+exports_sumat.sort((a, b) => {
+  return a.name == "Andere" ? 1 : b.name == "Andere" ? -1 : b.value - a.value;
+});
 
 var rscale = scale
   .scaleThreshold()
@@ -63,7 +69,8 @@ export default {
   data: () => ({
     colorscale: scale
       .scaleOrdinal()
-      .range(["#CBCFCD", "#EFD594", "#78CDDB", "#E98895", "#ADC196"]),
+      .range(["#CBCFCD", "#EFD594", "#78CDDB", "#E98895", "#ADC196"])
+      .domain(exports_sumat.map(d => d.name)),
     has_popup: false,
     height: 500
   }),
@@ -100,7 +107,7 @@ export default {
         y = (y * 1.0) / 1000;
         i++;
       }
-      return `${this.$fmt(".1f")(y)}${gro[i]}`;
+      return `${this.$fmt(",.2r")(y)}${gro[i]}`;
     },
     zoom_to_change($event) {
       if (!this.auswahl) {
@@ -147,14 +154,6 @@ export default {
       this.map.invalidateSize(false);
 
       var all_relevant_features = [];
-      var colorscale = scaleCluster();
-      if (this.zoom_to) {
-        colorscale = colorscale
-          .domain(
-            this.relevant_exports.map(d => +d.mlsum).sort((a, b) => a - b)
-          )
-        .range(["#a5dde7", "#93d3e0", "#80cad9", "#6cc0d2", "#56b7cb", "#08a4bd"]); // eslint-disable-line
-      }
 
       if (["map3", "map4"].indexOf(this.state) >= 0) {
         this.gj2.setStyle(x => {
@@ -175,7 +174,7 @@ export default {
             r.has_feature = true;
             all_relevant_features.push(x);
             return {
-              fillColor: colorscale(r.mlsum),
+              fillColor: this.chloroplethscale(r.mlsum),
               fillOpacity: 1,
               color: "#ffffff",
               weight: 0.5,
@@ -243,7 +242,6 @@ export default {
       }
       if (this.state == "map3") {
         // exporte choropleth
-        console.log(this.relevant_exports.filter(d => !d.has_feature));
         this.show_layers([this.gj2, this.gj3]);
         this.map.flyToBounds(
           L.geoJson({
@@ -399,13 +397,23 @@ export default {
       this.top3layers_fg = L.featureGroup(top3exports.map(d => d[2]));
       this.top3layers_lg = L.layerGroup(top3exports.map(d => d[1]));
       this.top3layers_g = L.geoJson(
-        { type: "FeatureCollection", features: top3exports.map(d => d[3]) },
         {
-          style: {
-            color: "blue",
-            stroke: "transparent",
-            opacity: 0,
-            interactive: false
+          type: "FeatureCollection",
+          features: top3exports.map((d, i) => {
+            var r = d[3];
+            r.style = {
+              color: this.chloroplethscale(+top3exports[i][0].mlsum),
+              stroke: "transparent",
+              opacity: 0,
+              fillOpacity: 1,
+              interactive: false
+            };
+            return r;
+          })
+        },
+        {
+          style: function(a) {
+            return a.style;
           }
         }
       );
@@ -435,6 +443,8 @@ export default {
                                 background: ${c0};
                                 border: 2px solid ${c1};
                                 vertical-align: baseline;
+                                margin-left: 1px;
+                                margin-right: 2px;
                               "></span>${
                                 rscale.domain()[i] ? rscale.domain()[i] : ""
                               }</div>`
@@ -489,6 +499,17 @@ export default {
     },
     relevant_companies() {
       return austria_companies.filter(d => d.typ.indexOf(this.zoom_to) >= 0);
+    },
+    chloroplethscale() {
+      var colorscale = scaleCluster();
+      if (this.zoom_to) {
+        colorscale = colorscale
+          .domain(
+            this.relevant_exports.map(d => +d.mlsum).sort((a, b) => a - b)
+          )
+        .range(['#e0e0e0','#bbbfbd','#979e9b','#757f7a','#54615b']); // eslint-disable-line
+      }
+      return colorscale;
     }
   },
   mounted() {

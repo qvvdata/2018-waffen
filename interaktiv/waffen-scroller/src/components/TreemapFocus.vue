@@ -15,7 +15,15 @@
                 background-color: ${colorscale(rd.id)};
                 `"
                 @click="$emit('zoom_to_change', rd.id)"
-                ><span v-html="rd.id"></span>
+                >
+
+                <span>
+                  <span v-html="`${rd.id}${auswahl && zoom_to || rd.y1-rd.y0>0.24?':':''}`"></span>
+                  <br v-if="auswahl && zoom_to || rd.y1-rd.y0>0.24">
+                  <span v-if="(auswahl && zoom_to) || rd.y1-rd.y0>0.24" v-html="`${groformat(rd.value)} €`"></span>
+                </span>
+
+                <div class="klick" v-if="auswahl && zoom_to" style="position: absolute; top: 5px; left: 5px">…</div>
                 <div class="bgthing" :style="`
                                 background-image: url('${$base_url ? $base_url : '.'}${`/img/${rd.id}.png`}');
                                 background-position: 50% 50%;
@@ -35,7 +43,8 @@ export default {
   props: {
     zoom_to: String,
     auswahl: Boolean,
-    colorscale: Function
+    colorscale: Function,
+    groformat: Function
   },
   data: () => ({
     renderdata: []
@@ -94,17 +103,23 @@ export default {
   max-width: 33%
   max-height: 33%
 
+@media(min-width: 520px)
+  .TreemapFocus.zoomed
+    max-width: 25%
+    max-height: 25%
+
 .TreemapFocus.zoomed.auswahl:hover
-  transition: opacity 1s
-  opacity: 0.2
+  transition: opacity 0.5s
+  opacity: 0.9
 
 .TreemapFocus.auswahl:hover .tmrect
-  transition: opacity 1s
+  transition: opacity 0.5s
   opacity: 0.5
 
 .TreemapFocus.auswahl:hover .tmrect:hover
-  transition: opacity 1s
+  transition: opacity 0.5s
   opacity: 1
+
 
 .tmrect
   position: absolute
@@ -113,9 +128,25 @@ export default {
 
   color: black
   font-weight: bold
+  line-height: 1.1em
 
-  text-shadow: 1px 1px 0px rgba(255,255,255,0.8), -1px -1px 0px rgba(255,255,255,0.8), 1px -1px 0px rgba(255,255,255,0.8), -1px 1px 0px rgba(255,255,255,0.8)
-  -webkit-font-smoothing: antialiased
+  .klick
+    font-size: 1.5em
+    color: rgba(255,255,255,0.5)
+    text-shadow: none
+    font-weight: normal
+
+  &:hover .klick
+    transition: font-size 0.2s, color 0.2s
+    font-size: 1.6em
+    color: rgba(255,255,255,1)
+
+
+  & > span
+    display: inline-block
+    padding: 5px 10px 2px
+    background: rgba(255,255,255,0.5)
+    text-align: center
 
   img
     display: block
