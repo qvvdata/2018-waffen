@@ -186,8 +186,8 @@ export default {
       } else {
         this.gj2.setStyle({
           fillColor: "transparent",
-          weight: 1,
-          color: "black",
+          weight: 0.5,
+          color: "#bababa",
           opacity: 1,
           fillOpacity: 0
         });
@@ -234,7 +234,8 @@ export default {
               {
                 animate: true,
                 duration: 0.5,
-                padding: [44, 40]
+                paddingTopLeft: [45, 0],
+                paddingBottomRight: [0, 0]
               }
             );
           }, 500);
@@ -372,17 +373,18 @@ export default {
         })
       );
 
-      var top3exports = this.relevant_exports.slice(0, 3).map(d => [
+      var top3exports = this.relevant_exports.slice(0, 3).map((d, i) => [
         d,
         L.swoopyArrow(
           [48.210033, 16.363449],
           [d.lat_destination_country, d.long_destination_country],
           {
-            weight: Math.log(d.mlsum) / 10,
+            weight: 3 - i,
             label: `${d.name_destination_country}: ${this.groformat(d.mlsum)}`,
             labelAt: "to",
-            iconAnchor: [50, 15],
-            labelClassName: "swoopy_lbl"
+            iconAnchor: [d.iso_destination_country == "CZ" ? 0 : 50, 20],
+            labelClassName: `swoopy_lbl ${d.iso_destination_country}`,
+            color: "#888"
           }
         ),
         L.marker([d.lat_destination_country, d.long_destination_country]),
@@ -508,8 +510,8 @@ export default {
         }
       }
     });
-    if(this.auswahl) {
-      map.zoomControl.setPosition('topright');
+    if (this.auswahl) {
+      map.zoomControl.setPosition("topright");
     }
     map.attributionControl.setPrefix(false);
     map.getRenderer(map).options.padding = 2;
@@ -594,6 +596,9 @@ export default {
 
 .swoopy_lbl {
   text-align: right;
+}
+.swoopy_lbl.CZ {
+  text-align: left;
 }
 
 .leaflet-container {
