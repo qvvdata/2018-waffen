@@ -350,7 +350,11 @@ export default {
                               ? d.Beschreibung + "<br />"
                               : ""
                           }
-                          Beschäftigte: ${d.beschaeftigte}<br />
+                          Beschäftigte${
+                            d.beschaeftigte_jahr != "NA"
+                              ? ` ${d.beschaeftigte_jahr}`
+                              : ""
+                          }: ${d.beschaeftigte}<br />
                           Branchen: ${otherbranches
                             .map(
                               d2 =>
