@@ -1,1 +1,1 @@
-curl "https://docs.google.com/a/xbhd.org/document/export?format=txt&id=1cMfX4IuTMy_j4jHM79vsS-i7mVSOWB6Yect0rABN0P4&token=AC4w5ViLNKc9KoPj8b0Vs8YdyECOpUoiLQ%3A1536101365485&ouid=106128926035200482619&includes_info_params=true" > src/data/steps.archieml
+curl "https://docs.google.com/document/export?format=txt&id=1cMfX4IuTMy_j4jHM79vsS-i7mVSOWB6Yect0rABN0P4&includes_info_params=true" > src/data/steps.archieml

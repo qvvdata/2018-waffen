@@ -100,7 +100,7 @@ export default {
       this.height = h;
     },
     groformat(z) {
-      var gro = ["", "tsd", "mio", "mrd"];
+      var gro = ["", " Tsd.", " Mio.", " Mrd."];
       var i = 0;
       var y = z;
       while (y > 1000 && i < gro.length - 1) {
