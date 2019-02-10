@@ -1,0 +1,109 @@
+.qvv_embed_scrolly .container{
+  //margin-bottom: 60vh;
+}
+.qvv_embed_scrolly {
+  position: relative;
+  top: -120px;
+  margin-bottom: -120px;
+  z-index: 0;
+  font-family: Sailec, sans-serif;
+}
+
+.qvv_embed_scrolly p {
+  font-size: 15px;
+}
+
+.qvv_embed_scrolly .sections{
+  min-width: 250px;
+  border-top: 120px solid transparent;
+}
+
+.qvv_embed_scrolly .sections > div {
+  margin-top: 10vh;
+  margin-bottom: 55vh;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.25;
+  background: rgba(255,255,255,0.5);
+  padding: 0.5em 1em;
+  border-radius: 0;
+  position: relative;
+  z-index: 50;
+
+  max-width: 700px;
+}
+
+.qvv_embed_scrolly .sections {
+  padding-bottom: 40vh;
+}
+
+.qvv_embed_scrolly .sections > div:last-child {
+  margin-bottom: 0vh;
+}
+
+.qvv_embed_scrolly .sections > div.graph-scroll-active {
+  opacity: 1;
+  transition: opacity background 1s;
+}
+
+.qvv_embed_scrolly .sections {
+  padding-top: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.qvv_embed_scrolly .graphcontainer {
+  padding-top: 120px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 48;
+}
+
+.qvv_embed_scrolly.graph-scroll-fixed .graphcontainer {
+  position: fixed;
+}
+.qvv_embed_scrolly.graph-scroll-below .graphcontainer {
+  position: absolute;
+  bottom: 0;
+  top: auto;
+}
+
+.qvv_embed_scrolly .graphcontainer img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.qvv_embed_scrolly .graphcontainer .graph {
+  position: absolute;
+  top: 0;
+}
+.qvv_embed_scrolly .textwrapper {
+  background: rgba(255,255,255,0.7);
+  padding: 3px 10px ;
+}
+
+@media screen and (max-width: 520px) , screen and (max-height:600px)  {
+  .qvv_embed_scrolly {
+    position: relative;
+    top: -61px;
+    margin-bottom: -61px;
+  }
+
+  .qvv_embed_scrolly .sections{
+    min-width: 250px;
+    border-top: 61px solid transparent;
+  }
+  .qvv_embed_scrolly .graphcontainer {
+    padding-top: 61px;
+  }
+
+  .qvv_embed_scrolly p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .qvv_embed_scrolly p {
+    font-size: 14px;
+  }
+}
