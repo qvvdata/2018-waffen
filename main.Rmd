@@ -18,7 +18,7 @@ output:
 user_name <- "qvvdata" # your Git username (only needed if
 # you want to deploy to GH pages)
 project_name <- "2018-waffen" # adapt!
-package_date <- "2018-07-07" # date of the CRAN snapshot that
+package_date <- "2019-02-02" # date of the CRAN snapshot that
 # the checkpoint package uses
 ```
 
@@ -83,6 +83,7 @@ library(tidyverse) # ggplot2, dplyr, tidyr, readr, purrr, tibble
 library(magrittr) # pipes
 library(stringr) # string manipulation
 library(readxl) # excel
+library(generics)
 library(scales) # scales for ggplot2
 library(jsonlite) # json
 library(forcats) # easier factor handling,
@@ -155,32 +156,131 @@ options(scipen=999)
 
 exports_sumat <- exports %>%
   filter(category =="c") %>%
-  filter(name_source_country == "Austria")%>%
+  #filter(year!="2017") %>%
+  filter(name_source_country == "Austria") %>%
   group_by(wkdok)%>%
   summarise(mlsum= sum(value))
 
 write_excel_csv(exports_sumat, "output/exports_sumat.csv")
 
+# In wie viele Länder hat Österreich seit 2004 welche Militärgüter exportiert?
+exports_country_count_at <- exports %>%
+  filter(category =="c") %>%
+  #filter(year!="2017") %>%
+  filter(name_source_country == "Austria") %>%
+  distinct(name_destination_country, wkdok, .keep_all = TRUE) %>%
+  group_by(wkdok) %>%
+  summarise(country= n())
+
+# Ansehen, welche Länder das waren
+exports_country_sum_at <- exports %>%
+  filter(category =="c") %>%
+  #filter(year!="2017") %>%
+  filter(name_source_country == "Austria") %>%
+  group_by(name_destination_country) %>%
+  summarise(mlsum = sum(value))
+
+# In wie viele Länder hat Österreich seit 2004 insgesamt exportiert?
+exports_country_count_at_total <- exports %>%
+  filter(category =="c") %>%
+  #filter(year!="2017") %>%
+  filter(name_source_country == "Austria") %>%
+  distinct(name_destination_country, .keep_all = TRUE) %>%
+  group_by(name_source_country) %>%
+  summarise(country= n())
+
 #Entwicklung von Waffen und Munition
-exports_timeat <- exports %>%
+exports_timeat_waffen <- exports %>%
   filter(category =="c") %>%
   filter(name_source_country == "Austria" & wkdok=="Waffen & Munition")%>%
-  group_by(jahr)%>%
+  group_by(name_destination_country_german)%>%
   summarise(mlsum= sum(value))
 
-write_excel_csv(exports_sumat, "output/exports_timeat")
+write_excel_csv(exports_sumat, "output/exports_timeat.csv")
 
 #Wohin gehen österreichische Waffen- und Munitionsexporte
 exports_destination_at <- exports %>%
-  filter(category =="c") %>%
-  filter(name_source_country == "Austria" & wkdok=="Waffen & Munition")%>%
-  group_by(iso_destination_country, name_destination_country, wkdok,
-           lat_source_country, long_source_country, lat_destination_country, long_destination_country)%>%
+  filter(category == "c") %>%
+  filter(name_source_country == "Austria") %>%
+  filter(wkdok=="Waffen & Munition") %>%
+  group_by(iso_destination_country, name_destination_country, lat_destination_country, long_destination_country)%>%
   summarise(mlsum= sum(value))
 
 write_excel_csv(exports_destination_at, "output/exports_destination_at.csv")
 
-#
+##Wohin gehen österreichische Fahrzeugexporte?
+exports_vehicles_destination_at_total_markets <- exports %>%
+  filter(category =="c") %>%
+  filter(name_source_country == "Austria" & wkdok=="VEHICLES & ACCESSORIES")%>%
+  group_by(region_name) %>%
+  summarise(mlsum= sum(value))
+
+##Welcher Fahrzeugmarkt ist der wichtigste?
+exports_vehicles_destination_at_total <- exports %>%
+  filter(category =="c") %>%
+  filter(name_source_country == "Austria" & wkdok=="VEHICLES & ACCESSORIES")%>%
+  group_by(name_destination_country, long_destination_country, lat_destination_country, wkdok,
+           lat_source_country, long_source_country)%>%
+  summarise(mlsum= sum(value))
+
+# Wie viele gehen in den Mittleren Osten?
+exports$name_destination_country_german <- countrycode(exports$iso_destination_country, "iso2c", "country.name.de")
+
+exports_vehicles_destination_at_ME <- exports %>%
+  filter(category =="c") %>%
+  filter(name_source_country == "Austria" & wkdok=="VEHICLES & ACCESSORIES" & region_name=="Middle East")%>%
+  group_by(name_destination_country, long_destination_country, lat_destination_country,            name_destination_country_german) %>%
+  summarise(mlsum= sum(value)) %>%
+  mutate(mlsum_text  = as.character(round((mlsum/1000000), 1))) 
+
+write_excel_csv(exports_vehicles_destination_at_ME, "output/exports_vehicles_destination_at_ME_2017.csv")
+write.xlsx(as.data.frame(exports_vehicles_destination_at_ME), "output/exports_vehicles_destination_at_ME_2017.xls")
+
+#Welche Regionen wichtig?
+exports_vehicles_destination_region_at <- exports %>%
+  filter(category =="c") %>%
+  filter(name_source_country == "Austria" & wkdok=="VEHICLES & ACCESSORIES")%>%
+  group_by(region_name, wkdok,
+           lat_source_country, long_source_country)%>%
+  summarise(mlsum= sum(value))
+
+#PERSONAL EQUIPMENT
+
+##Wohin gehen österreichische PERSONAL EQUIPMENT exporte?
+exports_pe_destination_at <- exports %>%
+  filter(category =="c") %>%
+  filter(name_source_country == "Austria" & wkdok=="PERSONAL EQUIPMENT")%>%
+  group_by(iso_destination_country, name_destination_country, wkdok,
+           lat_source_country, long_source_country, lat_destination_country, long_destination_country)%>%
+  summarise(mlsum= sum(value))
+write_excel_csv(exports_pe_destination_at, "output/exports_pe_destination_at.csv")
+
+#Welche Regionen wichtig?
+exports_pe_destination_region_at <- exports %>%
+  filter(category =="c") %>%
+  filter(name_source_country == "Austria" & wkdok=="PERSONAL EQUIPMENT")%>%
+  group_by(region_name, wkdok,
+           lat_source_country, long_source_country)%>%
+  summarise(mlsum= sum(value))
+
+#PERSONAL EQUIPMENT
+
+##Wohin gehen österreichische Militärgüter insgesamt
+exports_total_destination_at <- exports %>%
+  filter(category =="c") %>%
+  filter(name_source_country == "Austria")%>%
+  group_by(iso_destination_country, name_destination_country,
+           lat_source_country, long_source_country, lat_destination_country, long_destination_country)%>%
+  summarise(mlsum= sum(value))
+write_excel_csv(exports_total_destination_at, "output/exports_total_destination_at.csv")
+
+#Welche Regionen wichtig?
+exports_pe_destination_region_at <- exports %>%
+  filter(category =="c") %>%
+  filter(name_source_country == "Austria" & wkdok=="PERSONAL EQUIPMENT")%>%
+  group_by(region_name, wkdok,
+           lat_source_country, long_source_country)%>%
+  summarise(mlsum= sum(value))
 
 ```
 
@@ -189,17 +289,81 @@ Zwischen 2004 und 2016 haben österreichischen Waffenhersteller Produkte im Wert
 Am wichtigsten ist der Sektor der kleinkalibrigen Waffen. Das Exportvolumen betrug 2,3 Milliarden Euro. 
 
 ```{r}
-#Visualisierungen
+needs(pkgbuild, pkgload, processx, remotes, sessioninfo, usethis)
 
-  # labs(title = "Schlagzeile", 
-  #      x = "Vertikale Achse", 
-  #      y = "horizontale Achse",
-  #      #subtitle ="Funktioniert aus unerklärlichen Gründen noch nicht", 
-  #      caption = "Quelle")+
-  # theme_addendum()
+devtools::install_github("xmarquez/democracyData")
+library(democracyData)
+needs(countrycode)
 
-#Exportieren für Illustrator funktioniert nicht über ggsave (Schriften), sondern besser über Export des Plot-Viewers
+eiu <- eiu
+
+eiu <- eiu %>%
+  mutate(class = ifelse(eiu>=8, "Vollständige Demokratie", 
+                        ifelse(eiu>=6, "Unvollständige Demokratien", 
+                               ifelse(eiu>=4, "Hybridregime", "Autoritäres Regime"))))
+
+eiu$iso3 <- countrycode(eiu_temp$GWn, "gwn", "iso3c") 
+eiu$iso2 <- countrycode(eiu_temp$GWn, "gwn", "iso2c") 
+                               
+
+exports_democracy <- exports %>%
+  filter(year>2012, iso_source_country=="AT") %>%
+  left_join(eiu, by=c("year"="year", "iso_destination_country"="iso2")) 
+  
+  
+exports_democracy_sumat <- exports_democracy %>%
+  filter(category =="c") %>%
+  #filter(year!="2017") %>%
+  filter(name_source_country == "Austria" & class=="Autoritäres Regime") %>%
+  group_by(class, name_destination_country) %>%
+  summarise(mlsum= sum(value))%>%
+  arrange(desc(mlsum))%>%
+  top_n(mlsum, n=7)
+write.xlsx(as.data.frame(exports_democracy_sumat), "output/ignore/exports_democracy_sumat.xlsx")
+
+
 ```
+
+# Wie viel Exporte in Konfliktparteien des Golfrates?
+```{r}
+yemen_conflictparties <- c("Bahrain", "Kuwait", "Qatar", "Saudi Arabia", "Senegal", "Sudan", "Morocco", "Egypt", "Jordan", "United Arab Emirates", "Yemen")
+
+exports_sumat_yemen <- exports %>%
+  filter(category =="c") %>%
+  filter(year>="2015") %>% # Konflikt beginnt im März 2015
+  filter(name_destination_country %in% yemen_conflictparties) %>%
+  filter(name_source_country == "Austria") %>%
+  group_by(name_source_country, name_destination_country) %>%
+  summarise(mlsum= sum(value)) %>%
+  arrange(desc(mlsum))
+
+write.xlsx(as.data.frame(exports_sumat_yemen), "output/ignore/exports_sumat_yemen_wk.xlsx")
+
+unique(exports_democracy$class)
+
+```
+```{r}
+# In der EU gelten derzeit Waffenembargos gegen 19 Staaten: Afghanistan, China, Demokratische Republik Kongo, Eritrea, Iran, Irak, Jemen, Libanon, Libyen, Myanmar, Nordkorea, Russland, Simbabwe, Somalia, Südsudan, Sudan, Venezuela, Zentralafrikanische Republik und Weißrussland. Hinzu kommt ein Embargo gegen die Terrorgruppen "Islamischer Staat" (IS) und Al-Kaida.
+
+embargo_eu <- c("Afghanistan", "China", "South Sudan", "Congo", "Eritrea", "Sudan", "Russia", "Libya", "Iran", "Iraq", "Yemen", "Lebanon", "North Korea", "Myanmar", "Central African Republic", "Zimbabwe", "Belarus", "Venezuela", "Somalia")
+
+exports_sumat_embargo <- exports %>%
+  filter(category =="c") %>%
+  filter(year>="2017") %>% # 
+  filter(name_destination_country %in% embargo_eu) %>%
+  filter(name_source_country == "Austria")
+
+
+# Testen, ob es keine Doppelbuchungen gab
+exports_dup_at <- exports %>%
+  filter(name_source_country == "Austria") %>%
+  distinct(year, iso_source_country, iso_destination_country, value, category, .keep_all = TRUE)
+
+exports_at <- exports %>%
+  filter(name_source_country == "Austria")
+
+```
+
 
 ## Linting
 

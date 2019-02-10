@@ -47,15 +47,17 @@ data <- data %>%
 
 data$typ <- trimws(data$typ)  
 
-#Beschäftigte in eigener Spalte
-
-
-    
 #exporte reinladen, aber nur ab 2004, weil sonst keine kategorisierung vorliegt
-exports <- read_xlsx("input/exporte_eu_pivot.xlsx", sheet="roh")%>%
-  mutate(jahr = as.numeric(year))%>%
-  filter(year>2003 & rating !="Miscellaneous" & name_destination_country !="Federal Republic of Yugoslavia")%>%
-  select(-X__1)
+# exports <- read_xlsx("input/exporte_eu_pivot.xlsx", sheet="roh")%>%
+#   mutate(jahr = as.numeric(year))%>%
+#   filter(year>2003 & rating !="Miscellaneous" & name_destination_country !="Federal Republic of Yugoslavia")%>%
+#   select(-X__1)
+
+#exporte reinladen, aber nur ab 2004, weil sonst keine kategorisierung vorliegt
+exports <- read_xlsx("input/export_2017.xlsx", sheet="export_2017") %>%
+  mutate(jahr = as.numeric(year)) %>%
+  filter(year>2003 & rating !="Miscellaneous" & name_destination_country !="Federal Republic of Yugoslavia")
+
 
 #wk dokumentation hinzufügen
 exports <- left_join(exports, dok, by=c("rating"="mlcat"))
