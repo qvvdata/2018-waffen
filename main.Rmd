@@ -154,14 +154,11 @@ options(scipen=999)
 ```{r, echo=TRUE, message=FALSE, warning=FALSE}
 #WHAT ARE THE RELEVANT ML-CATEGORIES FOR AUSTRIA FOR EXPORTED GOODS?
 
-<<<<<<< HEAD
-exports_sumat <- exports %>%
+
+exports_sumat_all <- exports %>%
   filter(category =="c") %>%
   #filter(year!="2017") %>%
   filter(name_source_country == "Austria") %>%
-=======
-
-
 
 exports_for_export <- exports %>%
   left_join(sparte_schoen %>% select(wkdok,schön), by=c(wkdok="wkdok")) %>%
@@ -172,7 +169,6 @@ exports_for_export <- exports %>%
 exports_sumat <- exports_for_export %>%
   filter(category == "c") %>%
   filter(name_source_country == "Austria")%>%
->>>>>>> 3beffcb86b58350fb5bb6ad50aa2035d6be779a7
   group_by(wkdok)%>%
   summarise(mlsum= sum(value))
 
@@ -209,15 +205,14 @@ exports_country_count_at_total <- exports %>%
 #Entwicklung von Waffen und Munition
 exports_timeat_waffen <- exports %>%
   filter(category =="c") %>%
-  filter(name_source_country == "Austria" & wkdok=="Waffen & Munition")%>%
-  group_by(name_destination_country_german)%>%
+  filter(name_source_country == "Austria")%>%
+  group_by(year)%>%
   summarise(mlsum= sum(value))
 
 write_excel_csv(exports_sumat, "output/exports_timeat.csv")
 
 
 #Wohin gehen österreichische Waffen- und Munitionsexporte
-<<<<<<< HEAD
 exports_destination_at <- exports %>%
   filter(category == "c") %>%
   filter(name_source_country == "Austria") %>%
@@ -300,7 +295,11 @@ exports_pe_destination_region_at <- exports %>%
   group_by(region_name, wkdok,
            lat_source_country, long_source_country)%>%
   summarise(mlsum= sum(value))
-=======
+
+
+```
+
+```{r}
 exports_destination_at <- exports_for_export %>%
   filter(category =="c") %>%
   #mutate(iso_destination_country = case_when(name_destination_country == "Kosovo" ~ "XK", TRUE ~ iso_destination_country)) %>%
@@ -315,10 +314,8 @@ exports_destination_at <- exports_for_export %>%
 write_excel_csv(exports_destination_at, "output/exports_destination_at.csv")
 write.csv(exports_destination_at, 'interaktiv/waffen-scroller/src/data/exports_countries.csv', fileEncoding='utf-8', row.names = F)
 
-
->>>>>>> 3beffcb86b58350fb5bb6ad50aa2035d6be779a7
-
 ```
+
 
 Zwischen 2004 und 2016 haben österreichischen Waffenhersteller Produkte im Wert von XY Milliarden Euro ins Ausland exportiert.
 

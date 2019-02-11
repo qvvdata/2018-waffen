@@ -68,13 +68,13 @@ data$typ <- trimws(data$typ)
 #   select(-X__1)
 
 #exporte reinladen, aber nur ab 2004, weil sonst keine kategorisierung vorliegt
-<<<<<<< HEAD
+#<<<<<<< HEAD
 exports <- read_xlsx("input/export_2017.xlsx", sheet="export_2017") %>%
   mutate(jahr = as.numeric(year)) %>%
   filter(year>2003 & rating !="Miscellaneous" & name_destination_country !="Federal Republic of Yugoslavia")
 
 
-=======
+#=======
 exports <- read_xlsx("input/exporte_eu_pivot.xlsx", sheet="roh")%>%
   mutate(jahr = as.numeric(year))%>%
   filter(year>2003 & rating !="Miscellaneous" & name_destination_country !="Federal Republic of Yugoslavia")%>%
@@ -85,7 +85,8 @@ exports <- read_xlsx("input/exporte_eu_pivot.xlsx", sheet="roh")%>%
                                                  TRUE ~ countrycode(sourcevar = iso_destination_country, origin="iso2c", destination="country.name.de"))) %>%
   mutate(iso_destination_country_3 = case_when(name_destination_country == "Kosovo" ~ "KOS", TRUE ~ iso_destination_country_3))
   
->>>>>>> 3beffcb86b58350fb5bb6ad50aa2035d6be779a7
+#>>>>>>> 3beffcb86b58350fb5bb6ad50aa2035d6be779a7
+
 #wk dokumentation hinzufügen
 exports <- left_join(exports, dok, by=c("rating"="mlcat"))
 
