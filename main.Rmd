@@ -158,7 +158,7 @@ options(scipen=999)
 exports_sumat_all <- exports %>%
   filter(category =="c") %>%
   #filter(year!="2017") %>%
-  filter(name_source_country == "Austria") %>%
+  filter(name_source_country == "Austria")
 
 exports_for_export <- exports %>%
   left_join(sparte_schoen %>% select(wkdok,schön), by=c(wkdok="wkdok")) %>%
@@ -248,7 +248,7 @@ exports_vehicles_destination_at_ME <- exports %>%
   mutate(mlsum_text  = as.character(round((mlsum/1000000), 1))) 
 
 write_excel_csv(exports_vehicles_destination_at_ME, "output/exports_vehicles_destination_at_ME_2017.csv")
-write.xlsx(as.data.frame(exports_vehicles_destination_at_ME), "output/exports_vehicles_destination_at_ME_2017.xls")
+#write.xlsx(as.data.frame(exports_vehicles_destination_at_ME), "output/exports_vehicles_destination_at_ME_2017.xls")
 
 #Welche Regionen wichtig?
 exports_vehicles_destination_region_at <- exports %>%
@@ -335,8 +335,8 @@ eiu <- eiu %>%
                         ifelse(eiu>=6, "Unvollständige Demokratien", 
                                ifelse(eiu>=4, "Hybridregime", "Autoritäres Regime"))))
 
-eiu$iso3 <- countrycode(eiu_temp$GWn, "gwn", "iso3c") 
-eiu$iso2 <- countrycode(eiu_temp$GWn, "gwn", "iso2c") 
+eiu$iso3 <- countrycode(eiu$GWn, "gwn", "iso3c") 
+eiu$iso2 <- countrycode(eiu$GWn, "gwn", "iso2c") 
                                
 
 exports_democracy <- exports %>%
