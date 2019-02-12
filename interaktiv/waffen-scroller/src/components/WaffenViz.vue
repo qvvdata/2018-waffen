@@ -234,7 +234,7 @@ export default {
                 animate: true,
                 duration: 0.5,
                 paddingTopLeft: [45, 0],
-                paddingBottomRight: [0, 0]
+                paddingBottomRight: [0, 15]
               }
             );
           }, 500);
@@ -517,7 +517,7 @@ export default {
     const parent = this.$el.querySelector(".map");
 
     var map = L.map(parent, {
-      zoomSnap: 0.25,
+      zoomSnap: 0.1,
       zoomDelta: 1,
       zoomControl: this.auswahl,
       zoom: this.auswahl,
