@@ -107,7 +107,7 @@ export default {
         y = (y * 1.0) / 1000;
         i++;
       }
-      return `${this.$fmt(",.2r")(y)}${gro[i]}`;
+      return `${this.$fmt(",d")(y)}${gro[i]}`;
     },
     zoom_to_change($event) {
       if (!this.auswahl) {
