@@ -168,7 +168,7 @@ exports_for_export <- exports %>%
 
 exports_sumat <- exports_for_export %>%
   filter(category == "c") %>%
-  filter(name_source_country == "Austria")%>%
+  filter(name_source_country == "Austria" & name_destination_country=="Uruguay")%>%
   group_by(wkdok)%>%
   summarise(mlsum= sum(value))
 
@@ -243,7 +243,7 @@ exports$name_destination_country_german <- countrycode(exports$iso_destination_c
 exports_vehicles_destination_at_ME <- exports %>%
   filter(category =="c") %>%
   filter(name_source_country == "Austria" & wkdok=="VEHICLES & ACCESSORIES" & region_name=="Middle East")%>%
-  group_by(name_destination_country, long_destination_country, lat_destination_country,            name_destination_country_german) %>%
+  group_by(name_destination_country, long_destination_country, lat_destination_country, name_destination_country_german) %>%
   summarise(mlsum= sum(value)) %>%
   mutate(mlsum_text  = as.character(round((mlsum/1000000), 1))) 
 
@@ -331,28 +331,58 @@ needs(countrycode)
 eiu <- eiu
 
 eiu <- eiu %>%
-  mutate(class = ifelse(eiu>=8, "Vollständige Demokratie", 
+  mutate(class = ifelse(eiu>=8, "Vollständige Demokratien", 
                         ifelse(eiu>=6, "Unvollständige Demokratien", 
-                               ifelse(eiu>=4, "Hybridregime", "Autoritäres Regime"))))
+                               ifelse(eiu>=4, "Hybridregime", "Autoritäre Regime"))))
 
 eiu$iso3 <- countrycode(eiu$GWn, "gwn", "iso3c") 
 eiu$iso2 <- countrycode(eiu$GWn, "gwn", "iso2c") 
                                
-
+# Wir müssen auf 2015 fixieren, weil sonst Länder von einer Kategorie in die nächste rutschen könnten
 exports_democracy <- exports %>%
-  filter(year>2012, iso_source_country=="AT") %>%
-  left_join(eiu, by=c("year"="year", "iso_destination_country"="iso2")) 
+  filter(year>2014, iso_source_country=="AT") %>%
+  left_join(eiu %>% filter(year=="2015"), by=c("iso_destination_country"="iso2")) 
   
   
 exports_democracy_sumat <- exports_democracy %>%
   filter(category =="c") %>%
+  mutate( class = if_else(is.na(class), "unbewertet", class), 
+          name_destination_country_german = if_else(name_destination_country_german=="Russische Föderation", "Russland", name_destination_country_german)) %>%
   #filter(year!="2017") %>%
-  filter(name_source_country == "Austria" & class=="Autoritäres Regime") %>%
-  group_by(class, name_destination_country) %>%
-  summarise(mlsum= sum(value))%>%
+  filter(name_source_country == "Austria") %>%
+  group_by(class, name_destination_country_german) %>%
+  summarise(mlsum= sum(value)) %>%
   arrange(desc(mlsum))%>%
-  top_n(mlsum, n=7)
-write.xlsx(as.data.frame(exports_democracy_sumat), "output/ignore/exports_democracy_sumat.xlsx")
+  na.omit()
+
+exports_democracy_sumat_all <- exports_democracy %>%
+  filter(category =="c") %>%
+  mutate( class = if_else(is.na(class), "unbewertet", class), 
+          name_destination_country_german = if_else(name_destination_country_german=="Russische Föderation", "Russland", name_destination_country_german)) %>%
+  #filter(year!="2017") %>%
+  filter(name_source_country == "Austria") %>%
+  group_by(class) %>%
+  summarise(mlsum= sum(value)) %>%
+  arrange(desc(mlsum))%>%
+  na.omit()
+
+write.xlsx(as.data.frame(exports_democracy_sumat), "output/ignore/exports_democracy_sumat_countries.xlsx")
+
+# Welche Waren an autoritäre Regime?
+exports_democracy_sumat_all <- exports_democracy %>%
+  filter(category =="c") %>%
+  mutate( class = if_else(is.na(class), "unbewertet", class), 
+          name_destination_country_german = if_else(name_destination_country_german=="Russische Föderation", "Russland", name_destination_country_german)) %>%
+  #filter(year!="2017") %>%
+  filter(name_source_country == "Austria" & class=="Autoritäre Regime") %>%
+  group_by(class, eudok) %>%
+  summarise(mlsum= sum(value)) %>%
+  arrange(desc(mlsum))%>%
+  na.omit()
+
+# Wie viele Denials gibt es?
+export_denials_austria <- exports %>%
+  filter(category =="d" & name_source_country=="Austria") 
 
 
 ```
@@ -360,6 +390,7 @@ write.xlsx(as.data.frame(exports_democracy_sumat), "output/ignore/exports_democr
 # Wie viel Exporte in Konfliktparteien des Golfrates?
 ```{r}
 yemen_conflictparties <- c("Bahrain", "Kuwait", "Qatar", "Saudi Arabia", "Senegal", "Sudan", "Morocco", "Egypt", "Jordan", "United Arab Emirates", "Yemen")
+
 
 exports_sumat_yemen <- exports %>%
   filter(category =="c") %>%
@@ -374,7 +405,25 @@ write.xlsx(as.data.frame(exports_sumat_yemen), "output/ignore/exports_sumat_yeme
 
 unique(exports_democracy$class)
 
+
+exports_sumat_yemen_dw_sa_vae <- exports %>%
+  filter(category =="c") %>%
+  filter(year>="2004") %>% # Konflikt beginnt im März 2015
+  filter(name_destination_country == "Saudi Arabia" | name_destination_country == "United Arab Emirates") %>%
+  filter(name_source_country == "Austria") %>%
+  group_by(name_source_country, name_destination_country, year) %>%
+  summarise(mlsum= sum(value)) %>%
+  spread(name_destination_country, mlsum) %>%
+  mutate(number_pretty = as.character(prettyNum(mlsum, big.mark =".")), 
+         number_pretty_mio = round(mlsum/1000000,2))
+  
+write.xlsx(as.data.frame(exports_sumat_yemen_dw_sa_vae), "output/ignore/exports_sumat_yemen_dw_sa_vae.xlsx")
+  
+  
+
 ```
+
+
 ```{r}
 # In der EU gelten derzeit Waffenembargos gegen 19 Staaten: Afghanistan, China, Demokratische Republik Kongo, Eritrea, Iran, Irak, Jemen, Libanon, Libyen, Myanmar, Nordkorea, Russland, Simbabwe, Somalia, Südsudan, Sudan, Venezuela, Zentralafrikanische Republik und Weißrussland. Hinzu kommt ein Embargo gegen die Terrorgruppen "Islamischer Staat" (IS) und Al-Kaida.
 
