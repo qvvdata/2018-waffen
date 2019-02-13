@@ -107,7 +107,7 @@ export default {
         y = (y * 1.0) / 1000;
         i++;
       }
-      return `${this.$fmt(",.2r")(y)}${gro[i]}`;
+      return `${this.$fmt(",d")(y)}${gro[i]}`;
     },
     zoom_to_change($event) {
       if (!this.auswahl) {
@@ -234,7 +234,7 @@ export default {
                 animate: true,
                 duration: 0.5,
                 paddingTopLeft: [45, 0],
-                paddingBottomRight: [0, 0]
+                paddingBottomRight: [0, 15]
               }
             );
           }, 500);
@@ -517,7 +517,7 @@ export default {
     const parent = this.$el.querySelector(".map");
 
     var map = L.map(parent, {
-      zoomSnap: 0.25,
+      zoomSnap: 0.1,
       zoomDelta: 1,
       zoomControl: this.auswahl,
       zoom: this.auswahl,
